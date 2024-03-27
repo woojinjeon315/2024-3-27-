@@ -1,3 +1,5 @@
+#100이하의 3과5의 모든 배수의합
+
 x = 0
 s = 0
 while x < 101:
@@ -15,6 +17,8 @@ while x < 101:
     s -= x
 print(s)
 
+# 1~100까지 모든수의 
+
 x = 0
 s = 0
 
@@ -23,3 +27,87 @@ while x < 100:
     s += x
 
 print(s)
+
+#어떤 세균은 1시간에 두배만큼 증식한다고 합니다. 처음 세균의 마리수 n과 경과한 시간 t가 매개변수로 주어질 때 t시간 후 세균의 수
+# 입출력 예
+# n	t	result
+# 2	10	2048
+# 7	15	229,376
+
+n =  #세균의수 
+t =  #시간
+
+rt = 16 - t
+
+
+while rt <= 15:
+    n *= 2
+    rt += 1
+
+result = n
+
+print(result)
+
+
+#어떤 세균은 1시간에 두배만큼 증식한다고 합니다. 처음 세균의 마리수 n과 경과한 시간 t가 매개변수로 주어질 때 t시간 후 세균의 수
+# 입출력 예
+# n	t	result
+# 2	10	2048
+# 7	15	229,376
+
+#내답
+
+n =  #세균의수 
+t =  #시간
+
+rt = 16 - t
+
+
+while rt <= 15:
+    n *= 2
+    rt += 1
+
+result = n
+
+print(result)
+#내답
+
+#GPT 답
+def solution(n, t):
+    # 초기 세균의 수
+    bacteria_count = n
+    
+    # t 시간 동안 세균 증식
+    for _ in range(t):
+        bacteria_count *= 2
+    
+    return bacteria_count
+
+# 예시 입력에 대한 출력 테스트
+print(solution(2, 10))  # 2048
+print(solution(7, 15))  # 229376
+
+#정수 num1, num2가 매개변수로 주어질 때, num1을 num2로 나눈 몫을 return 하도록 solution 함수를 완성해주세요.
+
+#내답
+def solution(num1, num2):
+    answer = 0
+    return answer
+
+
+    for _ in  num1 % num2 == n:
+
+
+    return n
+
+print(solution(10, 2))
+
+
+#GPT 답
+def solution(num1, num2):
+    # num1을 num2로 나눈 몫을 반환합니다.
+    return num1 // num2
+
+# 예시 입력에 대한 출력 테스트
+print(solution(10, 5))  # 2
+print(solution(7, 2))   # 3
