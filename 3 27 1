@@ -1,0 +1,16 @@
+x = 0
+s = 0
+while x < 101:
+    x += 3
+    s += x
+
+x = 0
+while x < 101:
+    x += 5
+    s += x
+
+x = 0
+while x < 101:
+    x += 15
+    s -= x
+s
