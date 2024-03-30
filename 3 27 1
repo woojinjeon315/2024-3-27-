@@ -128,3 +128,13 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+q = "   + -- + - + -   "
+w = '  + --- + - +   '
+e = '   + -- + - + -   '
+r = '   + - + - + - +   '
+
+print(q[0:])
+print(w[0:])
+print(e[0:])
+print(r[0:])
