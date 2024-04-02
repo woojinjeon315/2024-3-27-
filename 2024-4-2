@@ -1,0 +1,70 @@
+#첫과제 다음수업까지 숫자를 모두 더하는 코드 짜기
+#'123ab57bn1'
+
+s = 0
+for i in '123ab57bn1':
+    if i = int
+        s+=int(i)
+
+s
+
+q = '123ab57bn1'
+
+for i in '123ab57bn1':
+    if i = int
+        s+=in
+
+q = '123ab57bn1'
+w = 0
+e = 0
+
+while w < len(q):
+    if q[w].isdigit() == True:
+        e += int(q[w])     
+        w += 1
+
+    else:
+        w += 1
+print(w)
+print(e)
+
+
+q = '123ab57bn1'
+
+q.isdigit()
+
+q='123qwe'
+w=5
+
+
+if q[w]==str:
+    print('글자')
+else :
+    print('숫자')
+
+q = '123ab57bn1'
+w= 2
+
+
+q[w]
+
+x = 0
+while x < 5:
+    print('hello wolrd')
+    x += 1
+print('end')
+
+
+#답
+q = '123ab57bn1'
+w = 0
+e = 0
+
+while w < len(q):
+    if q[w].isdigit() == True:
+        e += int(q[w])     
+        w += 1
+
+    else:
+        w += 1
+print(e)
