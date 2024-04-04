@@ -138,3 +138,33 @@ print(q[0:])
 print(w[0:])
 print(e[0:])
 print(r[0:])
+
+for i in range(10):
+    print(i)
+    if i == 5:
+        break
+
+for i in range(10):
+    if i == 5:
+        continue
+    print(i)
+
+for i in range(10):
+    if i == 5:
+        pass
+    print(i)
+
+def one(): #함수의 정의
+    print('hello world') #함수의코드
+    print('hello world')
+    print('hello world')
+    return 10 #함수의 리턴값
+
+one() + one()
+
+#파선아실
+def add (x,y): #x,y는 파라미터
+    z = x + y
+    return z
+
+add(10,20) + add(30,40) #10,20,30,40 은 아구먼트
