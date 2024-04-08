@@ -68,3 +68,40 @@ while w < len(q):
     else:
         w += 1
 print(e)
+
+
+###
+
+def solution(data):
+    w = 0
+    e = 0
+
+    for x in (data): 
+        if data[w].isdigit() == True: 
+            e += int(data[w]) 
+            w += 1 
+        else: 
+            w += 1
+    
+    
+    return e
+
+solution('1q2w3e4r')
+
+###
+
+def solution(data):
+    w = 0
+    e = 0
+
+    for x in (data): 
+        if data[w].isdigit() == True: 
+            e += int(data[w]) 
+            w += 1 
+        else: 
+            w += 1
+    
+    
+    return e
+
+solution('1q2w3e4r')
