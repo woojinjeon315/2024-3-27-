@@ -10,6 +10,9 @@ elif password1.isalpha() and password2.isalpha():
 elif password1.isdigit() and password2.isdigit():
     print('비밀번호는 숫자로만 이루어질 수 없습니다.')
 
+elif passwoed1.isalnum() == True
+    print('비밀번호는 특수기호가 포함되어야 합니다.')
+
 else:
     # 비밀번호가 일치하지 않을 경우 처리할 내용
     print('비밀번호가 일치하지 않습니다.')
