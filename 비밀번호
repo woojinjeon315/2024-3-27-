@@ -7,7 +7,7 @@ if password1 == password2:
 elif password1.isalpha() and password2.isalpha():
     print('비밀번호는 알파벳 문자로만 이루어질 수 없습니다.')
 
-elif password1.isdigit() and password2.isdigit():
+elif not(password1.isdigit()) = True:
     print('비밀번호는 숫자로만 이루어질 수 없습니다.')
 
 elif passwoed1.isalnum() == True
