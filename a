@@ -1,0 +1,3 @@
+class Car (self):
+  def __init__ (self,speed,price)
+    speed
