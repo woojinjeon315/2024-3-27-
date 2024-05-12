@@ -1,0 +1,17 @@
+def one(data):
+    a = 0
+    aa = 0
+
+    def two(data):
+        return data + 1
+
+    def three(data):
+        return data + 2
+
+    a = two(data)
+    aa = three(data)
+    
+    return a + aa
+
+result = one(1)
+print(result)  # 결과 출력
