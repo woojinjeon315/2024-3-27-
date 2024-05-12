@@ -15,3 +15,74 @@ def one(data):
 
 result = one(1)
 print(result)  # 결과 출력
+
+
+def Q1(data1):
+    if data1 % 2 == 0:
+        return f"{data1}는 2의 배수입니다."
+    else:
+        return f"{data1}는 2의 배수가 아닙니다."
+
+def Q2(data1):
+    if data1 > 50:
+        return f"{data1}는 50이상입니다."
+    else:
+        return f"{data1}는 50이하입니다."
+
+data = 25
+print(Q1(data))
+print(Q2(data))
+
+def main(data1):
+
+    Q1a=()
+
+    def Q1(data1):
+        if data1 % 2 == 0:
+            Q1a = '는 2의 배수 입'
+        else:
+            Q1a = '는 2의 배수가 아닙'
+
+        return Q1a
+
+
+    def Q2(data1):
+
+        if data1 > 50:
+            Q2a = '는 50이상입니다.'
+
+        else:
+            Q2a = '는 50이하입니다.'
+
+        return Q2a
+        
+# f'제 이름은 {name} 입니다. 제 나이는 {age}입니다.'
+
+    return f'{data1}는 {Q1}니다. 그리고 {data1}{Q2}'
+
+print(main)
+main(25)
+
+#100이하 값이 3으로 나누었을때 나머지가 1인가 값에 2가 들어가는가
+
+def main (data):
+
+
+
+    def Q1(data):
+        if data % 3 == 1 :
+            return '3으로 나누었을때 나머지가 1 입니다.'
+
+        else :
+            return '3으로 나누었을때 나머지가 1 아닙니다.'
+
+    def Q2(data):
+        if '2' in str(data):
+            return '들어갑니다.'
+
+        else:
+            return '안들어갑니다.'
+    answer = '{}는 {} 그리고 {}에 2가 {}'.format(data,Q1(data),data,Q2(data))
+    return print(answer)
+
+main(12)
