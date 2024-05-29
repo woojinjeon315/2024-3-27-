@@ -105,3 +105,9 @@ def solution(data):
     return e
 
 solution('1q2w3e4r')
+
+
+s = np.arange(12)
+s = pd.Series(s)
+s.count()
+s.describe()
