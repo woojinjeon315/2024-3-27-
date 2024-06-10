@@ -111,3 +111,17 @@ s = np.arange(12)
 s = pd.Series(s)
 s.count()
 s.describe()
+
+
+s = 10
+
+x=[]
+y=[]
+
+
+for i in range(-s,s+1):
+    i.append(x)
+
+for t in x:
+    u = t**2
+    y.append(u)
