@@ -4,7 +4,7 @@ s = 0
 for i in '123ab57bn1':
     if i = int
         s+=int(i)
-     
+      
 s 
  
 q = '123ab57bn1'
