@@ -132,3 +132,8 @@ a = np.arange(11).reshape(3,4)
 
 max(a)
 max(a, axis =0 )
+
+class solution:
+
+    def __init__(self, account):
+        self.data = data
