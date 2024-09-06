@@ -11,4 +11,35 @@ print(w[0:])
 print(e[0:])
 print(r[0:])
 
+def solution(data):
 
+    
+    split_data = data[0].split(',')
+    number = split_data[0]
+    turn = int(split_data[1])
+    number_list = []
+
+
+    # for numberf in number:
+    #     number_list.append((numberf))
+    number_list = list(number)
+    sorted_number_list = list(sorted(number_list))
+    delete_number = sorted_number_list[:turn]
+    # print(sorted_number_list)
+
+    for number_listf in number_list:
+        if number_listf in delete_number:
+            number_list.remove(number_listf)
+    answer = ''.join(number_list)
+
+
+    return answer
+
+    # return None
+
+
+print(solution(["1924,2"]))#"94"
+print(solution(["1231234,3"]))#"3234"
+print(solution(["4177252841,4"]))#"775841"
+print(solution(["87654321,3"]))#"87654"
+print(solution(["87654321,2"]))#"9876"
