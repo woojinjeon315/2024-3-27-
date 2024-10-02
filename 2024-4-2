@@ -164,3 +164,20 @@ void main()
 int = i
 
 for (i = 0; i <= 10; i ++;)
+
+def solution(s):
+    
+    
+    data_list = []
+    
+    
+    for sf in s:
+        if sf.isdigit() == True:
+            data_list.append(sf)
+    
+    
+    sorted_data_list = list(sorted(data_list))
+    answer = (f"\"{sorted_data_list[0]} {sorted_data_list[-1]}\"")
+    
+    
+    return answer
