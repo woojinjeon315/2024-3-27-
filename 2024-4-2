@@ -181,3 +181,13 @@ def solution(s):
     
     
     return answer
+
+
+kiosk = ['떡볶이', '라면', '순대', '어묵']
+
+order = input('메뉴를 입력해주세요')
+
+if order in kiosk:
+    print(f'{order} 주문이 완료되였습이다.')
+else:
+    print(f'{order} 라는 메뉴는 없습니다.')
