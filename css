@@ -1,0 +1,44 @@
+#container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+
+a {
+  text-decoration:none;
+  color: #000000;
+}
+
+
+header {
+  background-color: #0D76CF;
+  padding: 5px;
+  border-radius: 10px;
+  color: #000000;
+}
+
+
+#top li {
+  display: inline;
+  margin-right: 50px;
+}
+
+
+#top a {
+  color: #ffffff;
+  text-decoration: none; 
+}
+
+
+main > section {
+  display: flex;
+  gap: 50px;
+  margin-top: 20px;
+  background-color: #f4f4f4;
+}
+
+
+section img {
+  width: 300px;
+  border-radius: 20px;
+}
