@@ -191,3 +191,22 @@ if order in kiosk:
     print(f'{order} 주문이 완료되였습이다.')
 else:
     print(f'{order} 라는 메뉴는 없습니다.')
+import java.util.Scanner;
+
+public class java1 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        sc.close();
+
+        for (int i = 0; i < n; i ++) {
+            for (int j = 0; j < n + 1; j ++)
+                System.out.print(" ");
+            for (int j = 0; j < i + 1; j ++)
+                System.out.print("*");
+            System.out.println(" ");
+        }
+
+    }
+}
+
