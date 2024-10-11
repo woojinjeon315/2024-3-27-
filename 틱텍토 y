@@ -942,7 +942,7 @@ end:
 $$$$$$
 
 #include <stdio.h>
-#define _CRT_SECURE_NO_WARNINGS
+//#define _CRT_SECURE_NO_WARNINGS
 
 void main() {
 
@@ -1073,8 +1073,8 @@ void main() {
                     X = 1;
                     goto end;
                 }
-                right_diagonal_temp = 0;
             }
+            right_diagonal_temp = 0;
         }
         if (width_max == height_turn) {
             for (left_diagonal_turn = 0; left_diagonal_turn < width_max; left_diagonal_turn++) {
@@ -1087,8 +1087,8 @@ void main() {
                     X = 1;
                     goto end;
                 }
-                left_diagonal_temp = 0;
             }
+            left_diagonal_temp = 0;
         }
     }
     printf("무승부 입니다..\n");
