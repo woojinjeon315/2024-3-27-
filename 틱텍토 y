@@ -939,3 +939,164 @@ end:
         printf("X 의 승리 입니다.\n");
     }
 }
+$$$$$$
+
+#include <stdio.h>
+#define _CRT_SECURE_NO_WARNINGS
+
+void main() {
+
+
+    int width_turn = 0;
+    int height_turn = 0;
+    int right_diagonal_turn = 0;
+    int left_diagonal_turn = 0;
+
+    int width_max = 3;
+    int height_max = 3;
+    int right_diagonal_max = 3;
+    int left_diagonal_max = 3;
+
+    int O = 0; /* O 는 숫자 1*/
+    int X = 0;/* X 는 숫자 -1*/
+
+    int width_temp = 0;
+    int height_temp = 0;
+    int right_diagonal_temp = 0;
+    int left_diagonal_temp = 0;
+
+    int game_turn = 0;
+    int gmae_turn_max = (width_max * height_max);
+
+    int place = 0;
+    int place_temp = 0;
+    char place_mark;
+
+
+    printf("Tic! Tac! Toe! 게임이 실행되었습니다. 게임의 크기는 3X3입니다.\n");
+    printf("각 항목의 번호는 다음과 같습니다. X가 먼저시작합니다.\n");
+    printf("가로, 세로, 대각선으로 3개의 표식을 연속시키면 승리하게됩니다.\n");
+
+
+    int ex[3][3] = {
+        {1, 2, 3},
+        {4, 5, 6},
+        {7, 8, 9}
+    };
+    char game_board[3][3] = {
+        {'#', '#', '#'},
+        {'#', '#', '#'},
+        {'#', '#', '#'}
+    };
+    int arr[3][3] = {
+        {0, 0, 0},
+        {0, 0, 0},
+        {0, 0, 0}
+    };
+    //처음 게임판 print
+    for (height_turn = 0; height_turn < height_max; height_turn++) {
+        for (width_turn = 0; width_turn < width_max; width_turn++) {
+            printf("%d ", ex[height_turn][width_turn]);
+        }
+        printf("\n");
+    }
+    for (game_turn = 0; game_turn < gmae_turn_max; game_turn++) {
+        if (game_turn % 2 == 0) {
+            printf("O의 차례입니다.\n");
+            place_temp = 1;
+            place_mark = 'O';
+        }
+        else if (game_turn % 2 == 1) {
+            printf("X의 차례입니다.\n");
+            place_temp = -1;
+            place_mark = 'X';
+        }
+        printf("위치를 선택해 주세요.\n");
+        scanf_s("%d", &place);
+        printf("입력한 번호는: %d\n", place);
+        for (height_turn = 0; height_turn < height_max; height_turn++) {
+            for (width_turn = 0; width_turn < width_max; width_turn++) {
+                if (place == ex[height_turn][width_turn]) {
+                    if (arr[height_turn][width_turn] == 0) {
+                        arr[height_turn][width_turn] = place_temp;
+                        game_board[height_turn][width_turn] = place_mark;
+                    }
+                    else {
+                        game_turn--;
+                        printf("이미 선택된 위치입니다. 다시 입력해주세요..\n");
+                    }
+                }
+                printf("%c ", game_board[height_turn][width_turn]);
+            }
+            printf("\n");
+        }
+        //게임이 끝났는지 판별
+        ////가로축 판별
+        for (height_turn = 0; height_turn < height_max; height_turn++) {
+            for (width_turn = 0; width_turn < width_max; width_turn++) {
+                width_temp += arr[height_turn][width_turn];
+            }
+            if (width_temp == width_max * 1) {
+                O = 1;
+                goto end;
+            }
+            else if (width_temp == -(width_max * 1)) {
+                X = 1;
+                goto end;
+            }
+            width_temp = 0;
+        }
+        //////세로축 판별
+        for (width_turn = 0; width_turn < width_max; width_turn++) {
+            for (height_turn = 0; height_turn < height_max; height_turn++) {
+                height_temp += arr[height_turn][width_turn];
+            }
+            if (height_temp == height_max * 1) {
+                O = 1;
+                goto end;
+            }
+            else if (height_temp == -(height_max * 1)) {
+                X = 1;
+                goto end;
+            }
+            height_temp = 0;
+        }
+        ////대각선축 판별
+        if (width_max == height_turn) {
+            for (right_diagonal_turn = 0; right_diagonal_turn < width_max; right_diagonal_turn++) {
+                right_diagonal_temp += arr[right_diagonal_turn][right_diagonal_turn];
+                if (right_diagonal_temp == right_diagonal_max * 1) {
+                    O = 1;
+                    goto end;
+                }
+                else if (right_diagonal_temp == -(right_diagonal_max * 1)) {
+                    X = 1;
+                    goto end;
+                }
+                right_diagonal_temp = 0;
+            }
+        }
+        if (width_max == height_turn) {
+            for (left_diagonal_turn = 0; left_diagonal_turn < width_max; left_diagonal_turn++) {
+                left_diagonal_temp += arr[width_max - left_diagonal_turn - 1][left_diagonal_turn];
+                if (left_diagonal_temp == left_diagonal_max * 1) {
+                    O = 1;
+                    goto end;
+                }
+                else if (left_diagonal_temp == -(left_diagonal_max * 1)) {
+                    X = 1;
+                    goto end;
+                }
+                left_diagonal_temp = 0;
+            }
+        }
+    }
+    printf("무승부 입니다..\n");
+end:
+    if (O != 0) {
+        printf("O 의 승리 입니다.\n");
+    }
+    if (X != 0) {
+        printf("X 의 승리 입니다.\n");
+    }
+}
