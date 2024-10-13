@@ -164,6 +164,26 @@ void main()
 int = i
 
 for (i = 0; i <= 10; i ++;)
+def solution(n):
+    
+    
+    p_f = [0,1] 
+    turn = 0
+    
+    
+    while n - 2 >= turn:
+        if 2 <= n:
+            p_f.append(p_f[-1] + p_f[-2])
+        turn += 1
+    print(p_f)
+    answer = (p_f[n] / 1234567)
+    if answer != int:
+        answer = int(str(answer)[0]) + 1
+    return answer
+print(solution(3))
+print(solution(5))
+print(solution(15))
+
 
 def solution(s):
     
