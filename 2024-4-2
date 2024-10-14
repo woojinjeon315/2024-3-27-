@@ -229,4 +229,16 @@ public class java1 {
 
     }
 }
+def solution(data):
+ 
 
+    answer = []
+ 
+
+    for dataf in data:
+        if dataf.isdigit():
+            answer.append(int(dataf))
+ 
+
+    answer = sum(answer)
+    return answer
