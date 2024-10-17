@@ -1,3 +1,27 @@
+def solution(s):
+    
+    
+    data_list = []
+    turn = 0
+    
+    
+    for sf in s:
+        if sf.isdigit() == True:
+            if s[turn - 1] == "-":
+                sf = "-" + sf
+                data_list.append(int(sf))
+
+            else:
+                data_list.append(int(sf))
+
+        turn += 1
+    
+    sorted_data_list = list(sorted(data_list))
+    # print(sorted_data_list)
+    answer = (f"{sorted_data_list[0]} {sorted_data_list[-1]}")
+    
+    
+    return answer
 #첫과제 다음수업까지 숫자를 모두 더하는 코드 짜기
 #'123ab57bn1
 s = 0
