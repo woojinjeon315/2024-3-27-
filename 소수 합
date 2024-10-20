@@ -1,0 +1,34 @@
+import java.util.Scanner;
+public class javaA {
+    public static void main(String[] args) {
+        Scanner key = new Scanner(System.in);
+        int m = key.nextInt();
+        int n = key.nextInt();
+        key.close();
+        int s = 0;
+        int sc = 0;
+        // int t = 0;
+
+        for (int i = m; i <= n; i++) {
+            for (int j = m; j < i; j++) {
+                if (i % j == 0) {
+                    s += i;
+                    sc += 1;
+                    System.out.println(i);
+                    break;
+                
+
+                
+            }
+            // System.out.println(i % j);
+            }
+        }
+        if (s == 0) {
+            System.out.println(-1);
+        }
+        else {
+            System.out.println(sc);
+            System.out.println(s);
+        }
+    }
+}
