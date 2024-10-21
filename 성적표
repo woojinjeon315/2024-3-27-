@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            #box {
+                border:1px solid#000;
+                border-collapse: collapse;
+
+            }
+            
+            table, th, td{
+                border:1px solid#ccc;
+                border-collapse: collapse;
+                }
+            th, td{ 
+                padding:10px 20px; 
+            }
+        </style>
+    </head>
+    <body>
+        <div class = "box">
+            <table>
+                <caption><h1>학생 성적표</h1></caption>
+                <thead>
+                    <tr>
+                        <th>학생 이름</th>
+                        <th>과목</th>
+                        <th>점수</th>
+                        <th>학점</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="4">김민철</td>
+                        <td>수학</td>
+                        <td>95</td>
+                        <td>A+</td>
+                    </tr>
+                    <tr>
+                        <td>영어</td>
+                        <td>88</td>
+                        <td>B+</td>
+                    </tr>
+                    <tr>
+                        <td>과학</td>
+                        <td>92</td>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <td>역사</td>
+                        <td>85</td>
+                        <td>B</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="4">김단영</td>
+                        <td>수학</td>
+                        <td>90</td>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <td>영어</td>
+                        <td>93</td>
+                        <td>A+</td>
+                    </tr>
+                    <tr>
+                        <td>과학</td>
+                        <td>87</td>
+                        <td>B+</td>
+                    </tr>
+                    <tr>
+                        <td>역사</td>
+                        <td>80</td>
+                        <td>B</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>
