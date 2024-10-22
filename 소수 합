@@ -32,3 +32,36 @@ public class javaA {
         }
     }
 }
+
+import java.util.Scanner;
+public class javaA {
+    public static void main(String[] args) {
+        Scanner key = new Scanner(System.in);
+        int m = key.nextInt();
+        int n = key.nextInt();
+        key.close();
+        int s = 0;
+        int t = 0;
+
+        for (int i = m; i <= n; i++) {
+            t = 0;
+            for (int j = 2; j < i; j++) {
+                if (i % j == 0) {
+                    t += 1;
+                    // break ;
+                }
+            }
+            if (t == 0) {
+                s += i;
+                // System.out.println(i);
+            }
+            
+        }
+        if (s == 0) {
+            System.out.println(-1);
+        }
+        else {
+            System.out.println(s);
+        }
+    }
+}
