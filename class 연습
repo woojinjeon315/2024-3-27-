@@ -1,0 +1,75 @@
+# (1)
+
+# class point_f :
+#     def __init__(self, name, point = []):
+#         self.name = name
+#         self.point = point
+
+#     def mean(self, data):
+#         for data_f in data:
+#             self.point.append(data_f)
+#         re = sum(self.point) / len(self.point)
+#         print(f'{self.name} 종목')
+#         print(f'평균은 {re} 입니다.')
+        
+# bow = point_f('양궁')
+# bow.mean([9,6,9,2,4,6])
+
+# (2)
+
+# class talk:
+#     def __init__(self, name):
+#         self.name = name
+
+# class Greeting(talk):
+#     def short_Greeting(self):
+#         print("Hi")
+
+#     def long_Greeting(self):
+#         print("Hello")
+
+# greeting = Greeting('hani')
+# print(greeting.short_Greeting())
+# print(greeting.long_Greeting())
+
+# (3)
+
+# class talk:
+#     def __init__(self, name):
+#         self.name = name
+
+#     def short_Greeting(self):
+#         print("안녕")
+
+#     def long_Greeting(self):
+#         print("안녕하세요")
+
+# class Greeting(talk):
+#     def short_Greeting(self):
+#         print("Hi")
+
+#     def long_Greeting(self):
+#         print("Hello")
+
+
+# greeting = Greeting('hani')
+# greeting.short_Greeting()
+# greeting.long_Greeting()
+
+
+class point_f :
+    def __init__(self, name, point = []):
+        self.name = name
+        self.point = point
+
+    def mean(self, data):
+        for data_f in data:
+            self.point.append(data_f)
+        re = sum(self.point) / len(self.point)
+        print(f'{self.name} 종목')
+        print(f'평균은 {re} 입니다.')
+        
+bow = point_f('양궁')
+bow.mean([9,6,9,2,4,6])
+bow.mean([5,2,10,2,3,8])
+
