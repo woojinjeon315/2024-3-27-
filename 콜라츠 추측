@@ -138,3 +138,49 @@ void main() {
 	}
 	end:;
 }
+#include <stdio.h>
+
+void main() {
+
+
+	int n = 0;
+	int N ;
+	int one_the_number = 0;
+	int infinite_cycle = 0;
+
+
+	printf("숫자를 입력해 주세요.");
+	scanf_s("%d", &n);
+	printf("%d\n", n);
+	
+
+	N = n;
+	n = (n * 3) + 1;
+	printf("%d\n", n);
+
+
+	while (one_the_number < 3) {
+		if (n % 2 == 0) {
+			n = n / 2;
+		}
+		else {
+			n = (n * 3) + 1;
+		}
+		if (n == 1) {
+			one_the_number += 1;
+		}
+		if (n == N) {
+			printf("%d\n", n);
+			infinite_cycle = 1;
+			goto end;
+		}
+		printf("%d\n", n);
+	}
+	end:
+		if (infinite_cycle == 1) {
+			printf("입력된 숫자로 되돌아와 프로그램을 종류 합니다.");
+		}
+		else {
+			printf("입력된 숫자로 되돌아가지 않고 무한히 반복되어 프로그램을 종류합니다.");
+		}
+}
