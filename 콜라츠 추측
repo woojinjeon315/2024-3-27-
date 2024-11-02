@@ -516,3 +516,62 @@ void main() {
 
 }
 
+#include <stdio.h>
+
+
+int Collatz_distinguish(int n, int Qnumber) {
+	int N;
+	int end = 0;
+	int infinite_cycle = 0;
+	N = n;
+
+	n = (n * 3) + 1;
+
+	while (end == 0) {
+		if (n % 2 == 0) {
+			n = n / 2;
+		}
+		else {
+			n = (n * 3) + 1;
+		}
+
+		if (Qnumber == 1) {
+			printf("%d\n", n);
+		}
+
+		if (n == N) {
+			infinite_cycle = 1;
+			end = 1;
+			break;
+		}
+		else if (n == 1) {
+			end = 1;
+		}
+	}
+
+	return infinite_cycle;
+}
+
+int main() {
+	int count = 0;
+	int n;
+
+	printf("1번 문제");
+	printf("숫자를 입력해 주세요.");
+	scanf_s("%d", &n);
+	printf("%d\n", n);
+	Collatz_distinguish(n, 1);
+
+	printf("2번 문제");
+
+	for (int turn = 2; turn <= 10000; turn++) {
+		if (turn % 2 == 0) {
+			if (Collatz_distinguish(turn, 2) == 1) {
+				count++;
+			}
+		}
+	}
+
+	printf("숫자의 개수: ");
+	printf("%d\n", count);
+}
