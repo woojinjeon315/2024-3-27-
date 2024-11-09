@@ -1,1 +1,47 @@
 
+// C++ code
+//
+#include <Wire.h>
+void setup()
+{
+  Wire.begin();
+  Serial.begin(9600);
+  pinMode(8, INPUT);
+  pinMode(9, INPUT);
+  pinMode(10, INPUT);
+
+
+ // const int BUTTON1 = 8;
+ // const int BUTTON2 = 9;
+  //const int BUTTON3 = 10;
+
+}
+
+void loop()
+{
+  int red = digitalRead(8);
+  Serial.print("red:" + String(red));
+  
+  Wire.beginTransmission(1);
+  Wire.write("R");
+  Wire.write(red);
+  Wire.endTransmission();
+  
+  int yellow = digitalRead(9);
+  Serial.println(" yellow:" + String(yellow));
+  
+  Wire.beginTransmission(1);
+  Wire.write("Y");
+  Wire.write(yellow);
+  Wire.endTransmission();
+  
+  int blue = digitalRead(10);
+  Serial.println(" blue:" + String(blue));
+  
+  Wire.beginTransmission(1);
+  Wire.write("B");
+  Wire.write(blue);
+  Wire.endTransmission();
+  
+  delay(1000);
+}
