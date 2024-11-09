@@ -45,3 +45,71 @@ void loop()
   
   delay(1000);
 }
+#include <Wire.h>
+
+
+char code = ' ';
+int value = 0;
+int temp = 0;
+byte recvDataBuf[120];
+
+
+void setup()
+{
+  Wire.begin(1);
+  Wire.onRequest(requestEvent);
+  Wire.onReceive(receiveEvent);
+  
+  Serial.begin(9600);
+  
+  pinMode(3, OUTPUT);
+  pinMode(4, OUTPUT);
+  pinMode(5, OUTPUT);
+  
+  digitalWrite(5, HIGH);
+  digitalWrite(4, LOW);
+  digitalWrite(3, LOW);
+}
+
+
+void loop() {
+  delay(50000);
+}
+
+
+void receiveEvent(int howMany){
+  if (Wire.available()) {
+    code = Wire.read();
+    value = Wire.read();
+    Serial.println("code: " + String(code) + "  Value: " + String(value));
+  }
+  
+  if (code == 'A' && value == 1) {
+    digitalWrite(5, LOW);
+    digitalWrite(4, LOW);
+    digitalWrite(3, HIGH);
+    temp = 1;
+  }
+  
+  if (code == 'A' && value == 0 && temp == 1) {
+
+    digitalWrite(5, LOW);
+    digitalWrite(4, HIGH);
+    digitalWrite(3, LOW);
+    delay(30000);
+    digitalWrite(5, HIGH);
+    digitalWrite(4, LOW);
+    digitalWrite(3, LOW);
+	temp = 0;
+  }
+}
+
+
+void requestEvent() {
+  Wire.write("ok!\n");
+}
+
+// 기본값 빨간불
+// 버튼을 누르고 있으면 초록불로 변환
+// 빨간불 -> 초록불 일때 ryg = 100, ryg = 001
+// 초록불 -> 빨간불 일때 ryg = 001, ryg = 010, ryg = 100
