@@ -113,3 +113,91 @@ void requestEvent() {
 // 버튼을 누르고 있으면 초록불로 변환
 // 빨간불 -> 초록불 일때 ryg = 100, ryg = 001
 // 초록불 -> 빨간불 일때 ryg = 001, ryg = 010, ryg = 100
+
+
+#include <Wire.h>
+
+
+char code = ' ';
+int value = 0;
+int temp = 0;
+byte recvDataBuf[120];
+
+
+void setup()
+{
+  Wire.begin(1);
+  Wire.onRequest(requestEvent);
+  Wire.onReceive(receiveEvent);
+  
+  Serial.begin(9600);
+  
+  pinMode(2, OUTPUT);
+  pinMode(3, OUTPUT);
+  pinMode(4, OUTPUT);
+  pinMode(5, OUTPUT);
+  
+  digitalWrite(5, HIGH);
+  digitalWrite(4, LOW);
+  digitalWrite(3, LOW);
+  digitalWrite(2, LOW);
+}
+
+
+void loop() {
+  delay(50000);
+}
+
+
+void receiveEvent(int howMany){
+  if (Wire.available()) {
+    code = Wire.read();
+    value = Wire.read();
+    Serial.println("code: " + String(code) + "  Value: " + String(value));
+  }
+  
+  if (code == 'A' && value == 1 && temp == 0) {
+    digitalWrite(5, LOW);
+    digitalWrite(4, LOW);
+    digitalWrite(3, HIGH);
+    digitalWrite(2, LOW);
+    temp = 1;
+  }
+  
+  if (code == 'A' && value == 0 && temp == 1) {
+
+    digitalWrite(5, LOW);
+    digitalWrite(4, HIGH);
+    digitalWrite(3, LOW);
+    digitalWrite(2, LOW);
+    delay(30000);
+    digitalWrite(5, HIGH);
+    digitalWrite(4, LOW);
+    digitalWrite(3, LOW);
+    digitalWrite(2, LOW);
+    temp = 0;
+  }
+  
+  if (code == 'B' && value == 1 && temp == 0) {
+  
+  }
+}
+
+
+void requestEvent() {
+  Wire.write("ok!\n");
+}
+// 초록불 실행 코드 A
+// 기본값 빨간불
+// 버튼을 누르고 있으면 초록불로 변환
+// 빨간불 -> 초록불 일때 ryg = 100, ryg = 001
+// 초록불 -> 빨간불 일때 ryg = 001, ryg = 010, ryg = 100
+
+// 초록화살표 실행 코드 B
+// 기본값 빨간불
+// 버튼을 누르고 있으면 초록화살표와 빨간불 
+
+// pin5 빨간불
+// pin4 노란불
+// pin3 초록불
+// pin2 화살표
