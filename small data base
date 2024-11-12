@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+
+base_print() {
+	printf("==============")
+	printf("")
+}
+
+
+
+void main() {
+
+}
