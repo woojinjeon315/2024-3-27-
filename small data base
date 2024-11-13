@@ -107,3 +107,75 @@ void main() {
 		}
 	}
 }
+
+
+#include <stdio.h>
+
+char data[][3];
+char book_name;
+char author;
+char publisher;
+int book_number = 0;
+
+
+base_print() {
+	printf("==============\n");
+	printf("1. 추가\n");
+	printf("2. 출력\n");
+	printf("3. 검색\n");
+	printf("4. 종료\n");
+	printf("==============\n");
+	printf("정수값을 입력하세요.\n");
+}
+
+select_1() {
+	puts("도서의 이름: ");
+	gets_s("%c", book_name);
+	puts("저자:");
+	gets_s("%c", author);
+	puts("출판사:");
+	gets_s("%c", publisher);
+	book_number += 1;
+}
+select_2() {
+	for (int turn = 0; turn < book_number; turn++) {
+		//for (int turn_2 = 0; turn_2 < 3; turn_2++) {
+			//printf("%c", data[turn][turn_2]);
+			//printf("\n");
+		//}
+		puts("도서의 이름: ");
+		printf("%c", data[turn][0]);
+		printf("\n");
+
+		puts("저자: ");
+		printf("%c", data[turn][1]);
+		printf("\n");
+
+		puts("출판사: ");
+		printf("%c", data[turn][2]);
+		printf("\n");
+	}
+}
+select_3() {
+
+}
+
+
+void main() {
+	int n;
+
+	base_print();
+
+	while (n != 4) {
+		scanf_s("%d", &n);
+		if (n == 1) {
+			select_1();
+		}
+		if (n == 2) {
+			select_2();
+		}
+		if (n == 3) {
+			select_3();
+		}
+	}
+}
