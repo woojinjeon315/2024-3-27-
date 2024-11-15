@@ -1,0 +1,121 @@
+#include <Wire.h>
+
+
+void setup() {
+  Wire.begin();
+  Serial.begin(9600);
+  
+  pinMode(2, INPUT); //A
+  pinMode(3, INPUT); //B
+  pinMode(4, INPUT); //C
+  pinMode(5, INPUT); //D
+  pinMode(6, INPUT); //E
+  pinMode(7, INPUT); //F
+  pinMode(8, INPUT); //G
+  pinMode(9, INPUT); //H
+  pinMode(10, INPUT); //I
+  pinMode(11, INPUT); //J
+  pinMode(12, INPUT); //K
+  pinMode(13, INPUT); //L
+
+
+}
+
+void loop() {
+  int A = digitalRead(2);
+  Serial.println(" A:" + String(A));
+  Wire.beginTransmission(1);
+  Wire.write("A");
+  Wire.write(A);
+  Wire.endTransmission();
+
+  
+  int B = digitalRead(3);
+  Serial.println(" B:" + String(B));
+  Wire.beginTransmission(1);
+  Wire.write("B");
+  Wire.write(B);
+  Wire.endTransmission();
+
+  
+  int C = digitalRead(4);
+  Serial.println(" C:" + String(C));
+  Wire.beginTransmission(1);
+  Wire.write("C");
+  Wire.write(C);
+  Wire.endTransmission();
+
+  
+  int D = digitalRead(5);
+  Serial.println(" D:" + String(D));
+  Wire.beginTransmission(1);
+  Wire.write("D");
+  Wire.write(D);
+  Wire.endTransmission();
+
+  
+  int E = digitalRead(6);
+  Serial.println(" E:" + String(E));
+  Wire.beginTransmission(1);
+  Wire.write("E");
+  Wire.write(E);
+  Wire.endTransmission();
+  
+  
+  int F = digitalRead(7);
+  Serial.println(" F:" + String(F));
+  Wire.beginTransmission(1);
+  Wire.write("F");
+  Wire.write(F);
+  Wire.endTransmission();
+
+  
+  int G = digitalRead(8);
+  Serial.println(" G:" + String(G));
+  Wire.beginTransmission(1);
+  Wire.write("G");
+  Wire.write(G);
+  Wire.endTransmission();
+
+  
+  int H = digitalRead(9);
+  Serial.println(" H:" + String(H));
+  Wire.beginTransmission(1);
+  Wire.write("H");
+  Wire.write(H);
+  Wire.endTransmission();
+
+  
+  int I = digitalRead(10);
+  Serial.println(" I:" + String(I));
+  Wire.beginTransmission(1);
+  Wire.write("I");
+  Wire.write(I);
+  Wire.endTransmission();
+
+  
+  int J = digitalRead(11);
+  Serial.println(" J:" + String(J));
+  Wire.beginTransmission(1);
+  Wire.write("J");
+  Wire.write(J);
+  Wire.endTransmission();
+  
+  
+  int K = digitalRead(12);
+  Serial.println(" K:" + String(K));
+  Wire.beginTransmission(1);
+  Wire.write("K");
+  Wire.write(K);
+  Wire.endTransmission();
+
+  
+  int L = digitalRead(13);
+  Serial.println(" L:" + String(L));
+  Wire.beginTransmission(1);
+  Wire.write("L");
+  Wire.write(L);
+  Wire.endTransmission();
+  
+  delay(1000);
+}
