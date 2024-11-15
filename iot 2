@@ -246,3 +246,19 @@ int brainfuck()
 }
 
 bf code
+
+
+// 아두이노 설계 0
+// 모니터 코딩
+// 아두이노 bf 연결
+// bf 적용
+
+//모니터 (16, 2);
+//ㅁㅁㅁㅁ ㅁㅁㅁㅁ ㅁㅁㅁㅁ ㅁㅁㅁㅁ
+//ㅁㅁㅁㅁ ㅁㅁㅁㅁ ㅁㅁㅁㅁ ㅁㅁㅁㅁ
+
+//(0,0), (0,1) 줄 프린트
+//(16,0), (16,1) change, direction
+//change 는 enter, space, del,direction_input 순서대로 변환
+//direction 는 front, right, back, left 순서로 변환
+//input 입력시 헤딩하는 함수 반환
