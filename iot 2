@@ -298,15 +298,33 @@ void change_f() {
   //delay(300);
 }
 
+미완
+void line_f() { // (0,0), (0,1) 코드 줄 출력
+  int up = vertical += 1;
+  int up_str = [20];
+  int dp = vertical += 2;
+  int dp_str = [20];
 
+  
+  lcd.setCursor(0, 0);
+  itoa(up, up_str, 10);
+  //lcd.print(up_str);
+  lcd.setCursor(0, 1);
+  //lcd.print(vertical);
+}
 
-
+전역함수 
+int max_line = 100;
+int direction = 0;
+int change = 0;
+int vertical = 0;
+int horizontal = 0;
 
 
 // 아두이노 설계 0
 // 모니터 코딩
 // 아두이노 bf 연결
-// bf 적용 0
+// bf 호환여부 0
 
 //모니터 (16, 2);
 //ㅁㅁㅁㅁ ㅁㅁㅁㅁ ㅁㅁㅁㅁ ㅁㅁㅁㅁ
