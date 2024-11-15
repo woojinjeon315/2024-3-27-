@@ -166,7 +166,7 @@ void requestEvent() {
 }
 
 
-
+bf cord 아두이노 이식가능 
 unsigned char tape[30000] = { 0 };
 
 unsigned char* ptr = tape;
@@ -248,10 +248,65 @@ int brainfuck()
 bf code
 
 
+모니터 키 코딩 (15,0), (15,1) 에 글자 프린트
+
+void direction_f() {
+  if (direction == 0) {
+    lcd.setCursor(15, 1);
+  	lcd.print("U"); 
+  }
+  
+  else if (direction == 1) {
+    lcd.setCursor(15, 1);
+  	lcd.print("R"); 
+  }
+  
+  else if (direction == 2) {
+    lcd.setCursor(15, 1);
+  	lcd.print("D"); 
+  }
+  
+  else if (direction == 3) {
+    lcd.setCursor(15, 1);
+  	lcd.print("L"); 
+  }
+  //direction = direction % 4;
+  //change = change % 3;
+  
+  //delay(300);
+}
+
+void change_f() {
+  if (change == 0) {
+    lcd.setCursor(15, 0);
+  	lcd.print("E"); 
+  }
+  
+  else if (change == 1) {
+    lcd.setCursor(15, 0);
+  	lcd.print("S"); 
+  }
+  
+  else if (change == 2) {
+    lcd.setCursor(15, 0);
+  	lcd.print("D"); 
+  }
+  
+  //direction = direction % 4;
+  //change = change % 3;
+  
+  //delay(300);
+}
+
+
+
+
+
+
 // 아두이노 설계 0
 // 모니터 코딩
 // 아두이노 bf 연결
-// bf 적용
+// bf 적용 0
 
 //모니터 (16, 2);
 //ㅁㅁㅁㅁ ㅁㅁㅁㅁ ㅁㅁㅁㅁ ㅁㅁㅁㅁ
