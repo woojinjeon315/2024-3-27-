@@ -223,3 +223,13 @@ void receiveEvent(int howMany) {
 void requestEvent() {
   Wire.write("ok!\n");
 }
+
+
+//16 X 2 모니터
+//ㅁㅁㅁㅁ ㅁㅁㅁㅁ ㅁㅁㅁㅁ ㅁㅁㅁㅁ
+//ㅁㅁㅁㅁ ㅁㅁㅁㅁ ㅁㅁㅁㅁ ㅁㅁㅁㅁ
+
+//(0, 0), (0, 1) 는 줄번호
+//(15, 0), (15, 1) 는 change direction
+// change 은 del, enter, space 을 순서대로 변환
+//direction 는 front, right, back, left 방향으로 변환
