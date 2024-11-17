@@ -329,3 +329,177 @@ void main() {
 
 	}
 }
+
+
+#include <stdio.h>
+#include <string.h>
+#define _CRT_SECURE_NO_WARNINGS
+
+char data[100][3][300];
+char book_name[300];
+char author[300];
+char publisher[300];
+int book_number = 0;
+
+//void base_data1() {
+//	strcpy(data[0][0], "introduction to C");
+//	strcpy(data[0][1], "홀길동");
+//	strcpy(data[0][2], "Wide Publishing");
+//	book_number++;
+//}
+void base_data() {
+	strcpy_s(data[0][0], sizeof(data[0][0]), "Introduction to C");
+	strcpy_s(data[0][1], sizeof(data[0][1]), "홀길동");
+	strcpy_s(data[0][2], sizeof(data[0][2]), "Wide Publishing");
+	book_number++;
+}
+
+
+void base_print() {
+	printf("==============\n");
+	printf("1. 추가\n");
+	printf("2. 출력\n");
+	printf("3. 검색\n");
+	printf("4. 종료\n");
+	printf("==============\n");
+	printf("정수값을 입력하세요.\n");
+}
+
+void select_1() {
+	for (int turn = 0; turn <= 100; turn++) {
+		if (data[turn][0] == 0 && data[turn][1] == 0 && data[turn][2] == 0) {
+			puts("도서의 이름: ");
+			gets_s(sizeof(data[turn][0]),book_name);
+			printf("\n");
+			puts("저자:");
+			gets_s(sizeof(data[turn][0]),author);
+			printf("\n");
+			puts("출판사:");
+			gets_s(sizeof(data[turn][0]),publisher);
+			printf("\n");
+			/*strcpy(data[turn][0], book_name);
+			strcpy(data[turn][1], author);
+			strcpy(data[turn][2], publisher);*/
+			strcpy_s(data[turn][0], sizeof(data[turn][0]), book_name);
+			strcpy_s(data[turn][1], sizeof(data[turn][1]), author);
+			strcpy_s(data[turn][2], sizeof(data[turn][2]), publisher);
+			break;
+		}
+	}
+	book_number += 1;
+}
+void select_2() {
+
+
+	for (int turn = 0; turn < book_number; turn++) {
+		//for (int turn_2 = 0; turn_2 < 3; turn_2++) {
+			//printf("%c", data[turn][turn_2]);
+			//printf("\n");
+		//}
+		if (strlen(data[turn][0]) > 0) {
+			puts("도서의 이름: ");
+			printf("%s", data[turn][0]);
+			printf("\n");
+		}
+		if (strlen(data[turn][1]) > 0) {
+			puts("저자: ");
+			printf("%s", data[turn][1]);
+			printf("\n");
+		}
+		if (strlen(data[turn][2]) > 0) {
+			puts("출판사: ");
+			printf("%s", data[turn][2]);
+			printf("\n");
+		}
+		//puts("출판사: ");
+
+	}
+}
+//void select_3() {
+//	int match = 0;
+//	int match_count = 0;
+//	int match_turn = 0;
+//
+//	char search[30];
+//	char search_length = 0;
+//	puts("검색어를 입력하세요.");
+//	gets_s("%c", search);
+//
+//	for (int turn = 0; turn < 30; turn ++) {
+//		if (search[turn] == NULL) {
+//			search_length = turn - 1;
+//		}
+//	}
+//
+//	for (int turn = 0; turn < book_number; turn ++) {
+//		for (int turn_1 = 0; turn_1 < 3; turn_1 ++) {
+//			for (int turn_2 = 0; turn_2 < search_length; turn_2 ++) {
+//				if (search[0] == data[turn][turn_1][turn_2]) {
+//					for (int turn_3 = 0; turn_3 <= search_length; turn++) {
+//						if (search[turn_3] == data[turn][turn_1][turn_2 + turn_3]) {
+//							match_count += 1;
+//						}
+//					}
+//				}
+//			}
+//		}
+//	}
+//
+//	if (match_count == search_length + 1) {
+//		match = 1;
+//	}
+//	else {
+//		match = 0;
+//	}
+//
+//	if (match == 0) {
+//		puts("검색어와 일치하는 것이 없습니다.");
+//	}
+//	else {
+//		puts("도서의 이름: ");
+//		printf("%s", data[match_turn][0]);
+//		printf("\n");
+//
+//		puts("저자: ");
+//		printf("%s", data[match_turn][1]);
+//		printf("\n");
+//
+//		puts("출판사: ");
+//		printf("%s", data[match_turn][2]);
+//		printf("\n");
+//	}
+//}
+
+
+void main() {
+	int n = 0;
+	//int n = 0;
+
+
+	base_print();
+	base_data();
+
+	while (n != 4) {
+		getcher();
+		scanf_s("%d", &n);
+		if (n == 1) {
+			puts("1번을 선택했습니다.");
+			select_1();
+		}
+		else if (n == 2) {
+			puts("2번을 선택했습니다.");
+			select_2();
+		}
+		else if (n == 3) {
+			puts("3번을 선택했습니다.");
+			//select_3();
+		}
+		else if (n == 4) {
+			puts("4번을 선택했습니다.");
+		}
+		else {
+			puts("1 ~ 4 번중 하나를 입력해 주세요.");
+		}
+	}
+	//puts("프로그램을 종류합니다.");
+}
