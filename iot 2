@@ -320,6 +320,18 @@ int change = 0;
 int vertical = 0;
 int horizontal = 0;
 
+int temp_A = 0;
+int temp_B = 0;
+int temp_C = 0;
+int temp_D = 0;
+int temp_E = 0;
+int temp_F = 0;
+int temp_G = 0;
+int temp_H = 0;
+int temp_I = 0;
+int temp_J = 0;
+int temp_K = 0;
+int temp_L = 0;
 
 // 아두이노 설계 0
 // 모니터 코딩
@@ -335,3 +347,79 @@ int horizontal = 0;
 //change 는 enter, space, del,direction_input 순서대로 변환
 //direction 는 front, right, back, left 순서로 변환
 //input 입력시 헤딩하는 함수 반환
+
+입력 판
+void input_data() {
+  if (temp_A == 1) {
+    if (code == 'A' && value == 0 && temp_A == 1) {
+  	strcat(bf_code, "+");
+    temp_A = 0;
+    }
+    
+  }
+  if (temp_B == 1) {
+    if (code == 'B' && value == 0 && temp_B == 1) {
+  	strcat(bf_code, "-");
+    temp_B = 0;
+    }
+  }
+  if (temp_C == 1) {
+    if (code == 'B' && value == 0 && temp_C == 1) {
+  	strcat(bf_code, "-");
+    temp_C = 0;
+    }
+  }
+  if (temp_D == 1) {
+    if (code == 'B' && value == 0 && temp_D == 1) {
+  	strcat(bf_code, "-");
+    temp_D = 0;
+    }
+  }
+  if (temp_E == 1) {
+    if (code == 'B' && value == 0 && temp_E == 1) {
+  	strcat(bf_code, "-");
+    temp_E = 0;
+    }
+  }
+  if (temp_F == 1) {
+    if (code == 'B' && value == 0 && temp_F == 1) {
+  	strcat(bf_code, "-");
+    temp_F = 0;
+    }
+  }
+  if (temp_G == 1) {
+    if (code == 'B' && value == 0 && temp_G == 1) {
+  	strcat(bf_code, "-");
+    temp_G = 0;
+    }
+  }
+  if (temp_H == 1) {
+    if (code == 'B' && value == 0 && temp_H == 1) {
+  	strcat(bf_code, "-");
+    temp_H = 0;
+    }
+  }
+  if (temp_I == 1) {
+    if (code == 'B' && value == 0 && temp_I == 1) {
+  	strcat(bf_code, "-");
+    temp_I = 0;
+    }
+  }
+  if (temp_J == 1) {
+    if (code == 'B' && value == 0 && temp_J == 1) {
+  	strcat(bf_code, "-");
+    temp_J = 0;
+    }
+  }  if (temp_K == 1) {
+    if (code == 'B' && value == 0 && temp_K == 1) {
+  	strcat(bf_code, "-");
+    temp_K = 0;
+    }
+  }
+  if (temp_L == 1) {
+    if (code == 'B' && value == 0 && temp_L == 1) {
+  	strcat(bf_code, "-");
+    temp_L = 0;
+    }
+  }
+}
