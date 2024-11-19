@@ -201,3 +201,163 @@ void requestEvent() {
 // pin4 노란불
 // pin3 초록불
 // pin2 화살표
+
+
+// C++ code
+//
+#include <Wire.h>
+#include <LiquidCrystal.h>
+char code = ' ';
+int value = 0;
+int channel = 1;
+int temp_A = 0;
+int temp_B = 0;
+byte recvDataBuf[1000];
+char text[80][15] = {
+    "There is un",         // Line 1
+    "rest in the",         // Line 2
+    "Galactic Se",         // Line 3
+    "nate. Seve",          // Line 4
+    "ral thousa",          // Line 5
+    "nd solar s",          // Line 6
+    "ystems ha",           // Line 7
+    "ve declare",          // Line 8
+    "d their in",          // Line 9
+    "tentions t",          // Line 10
+    "o leave th",          // Line 11
+    "e Republic",          // Line 12
+    "",                    // Line 13 (empty line for spacing)
+    "This separ",          // Line 14
+    "atist mov",           // Line 15
+    "ement, un",           // Line 16
+    "der the le",          // Line 17
+    "adership o",          // Line 18
+    "f the myst",          // Line 19
+    "eriou Co",            // Line 20
+    "unt Dook",            // Line 21
+    "u, has ma",           // Line 22
+    "de it di",            // Line 23
+    "fficult f",           // Line 24
+    "or the li",           // Line 25
+    "mited nu",            // Line 26
+    "mber of J",           // Line 27
+    "edi Knigh",           // Line 28
+    "ts to main",          // Line 29
+    "tain pea",            // Line 30
+    "ce and or",           // Line 31
+    "der in th",           // Line 32
+    "e galax",             // Line 33
+    "y. Senato",           // Line 34
+    "r Amidala",           // Line 35
+    "the form",            // Line 36
+    "er Quee",             // Line 37
+    "n of Nab",            // Line 38
+    "oo, is re",           // Line 39
+    "turning t",           // Line 40
+    "o the Gal",           // Line 41
+    "actic Sen",           // Line 42
+    "ate to vo",           // Line 43
+    "te on th",            // Line 44
+    "e criti",             // Line 45
+    "cal issu",            // Line 46
+    "e of cre",            // Line 47
+    "ating an",            // Line 48
+    "ARMY OF ",            // Line 49
+    "THE REP",            // Line 50
+    "UBLIC to",            // Line 51
+    " assist",             // Line 52
+    "the over",            // Line 53
+    "whelmed",             // Line 54
+    " Jedi....",           // Line 55
+    "",                    // Line 56 (empty line for spacing)
+    "",                    // Line 57 (empty line for spacing)
+    "",                    // Line 58 (empty line for spacing)
+    "",                    // Line 59 (empty line for spacing)
+    "",                    // Line 60 (empty line for spacing)
+    "",                    // Line 61 (empty line for spacing)
+    "",                    // Line 62 (empty line for spacing)
+    "",                    // Line 63 (empty line for spacing)
+    "",                    // Line 64 (empty line for spacing)
+    "",                    // Line 65 (empty line for spacing)
+    "",                    // Line 66 (empty line for spacing)
+    "",                    // Line 67 (empty line for spacing)
+    "",                    // Line 68 (empty line for spacing)
+    "",                    // Line 69 (empty line for spacing)
+    "",                    // Line 70 (empty line for spacing)
+    "",                    // Line 71 (empty line for spacing)
+    "",                    // Line 72 (empty line for spacing)
+    "",                    // Line 73 (empty line for spacing)
+    "",                    // Line 74 (empty line for spacing)
+    "",                    // Line 75 (empty line for spacing)
+    "",                    // Line 76 (empty line for spacing)
+    "",                    // Line 77 (empty line for spacing)
+    "",                    // Line 78 (empty line for spacing)
+    "",                    // Line 79 (empty line for spacing)
+};
+
+LiquidCrystal lcd(2,3,4,5,6,7);
+
+void setup() {
+  Wire.begin(1);
+  lcd.begin(16, 2);
+  Serial.begin(9600);
+  Wire.onRequest(requestEvent);
+  Wire.onReceive(receiveEvent);
+}
+
+void loop()
+{
+  channel_change();
+  monitor();
+  delay(500);
+}
+
+void monitor() {
+  lcd.setCursor(0,0);
+  lcd.print(text[channel - 1]);
+
+
+  
+  lcd.setCursor(0,1);
+  lcd.print(text[channel]);
+
+
+}
+
+void channel_change() {
+
+  if (channel > 1 && temp_A == 1) {
+    channel -= 1;
+    if (code == 'A' && value == 0) {
+    	temp_A = 0;    
+    }
+  }
+  
+  if (channel < 16 && temp_B == 1) {
+    channel += 1;
+    if (code == 'B' && value == 0) {
+    	temp_B = 0;
+    }
+  }
+  Serial.println(channel);
+}
+  
+void receiveEvent(int howMany){
+  if (Wire.available()) {
+    code = Wire.read();
+    value = Wire.read();
+	Serial.println("code: " + String(code) + "  Value: " + String(value));  
+  }
+  if (code == 'A' && value == 1 && temp_A == 0) {
+    temp_A = 1;
+  }
+
+  if (code == 'B' && value == 1 && temp_B == 0) {
+    temp_B = 1;
+  }
+
+}
+
+void requestEvent() {
+  Wire.write("ok!\n");
+} 
