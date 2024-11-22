@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+void base_print() {
+	union val {
+		int s1;
+		int s2_1;
+		int s2_2;
+
+	};
+
+	union val u_v;
+	//int s1;
+	//int s2_1;
+	//int s2_2;
+
+
+	printf("도형의 타입을 입력하시오(0, 1, 2) : Wn");
+	scanf_s("&d", &u_v.s1);
+
+	if (u_v.s1 == 0) { // 삼각형
+		printf("밑변과 높이를 입력하시오(예를 들어서 100 200) : Wn");
+	}
+	else if (u_v.s1 == 1) {// 직사각형
+		printf("가로와 세로를 입력하시오(예를 들어서 100 200) : Wn");
+	}
+	else if (u_v.s1 == 2) { // 원
+		printf("반지름을 입력하시오(예를 들어서 100 200) : Wn");
+	}
+
+}
