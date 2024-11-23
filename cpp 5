@@ -236,3 +236,72 @@ int main() {
     printf("면적은 %d입니다.\n", area);
     return 0;
 }
+
+#include <stdio.h>
+
+union val {
+    int s1;
+};
+
+union val u_v;
+
+enum figure { triangle = 0, quadrangle, circle }; 
+int s2;
+int s3; 
+
+void base_print() {
+    int right_select = 0;
+
+    printf("도형의 타입을 입력하시오 (0, 1, 2) : ");
+    scanf_s("%d", &u_v.s1);
+
+    while (right_select == 0) {
+        enum figure select_figure = (enum figure)u_v.s1; 
+
+
+        if (select_figure == triangle) {
+            printf("밑변과 높이를 입력하시오 (예: 100 200) : ");
+            scanf_s("%d %d", &s2, &s3);
+            right_select = 1;
+        }
+        else if (select_figure == quadrangle) {
+            printf("가로와 세로를 입력하시오 (예: 100 200) : ");
+            scanf_s("%d %d", &s2, &s3);
+            right_select = 1;
+        }
+        else if (select_figure == circle) {
+            printf("반지름을 입력하시오 (예: 100) : ");
+            scanf_s("%d", &s2);
+            right_select = 1;
+        }
+        else {
+            printf("0, 1, 2 중 하나를 입력해 주세요.");
+            scanf_s("%d", &u_v.s1);
+        }
+    }
+}
+
+int figure_area() {
+
+    enum figure select_figure = (enum figure)u_v.s1; 
+    int area = 0;
+
+    if (select_figure == triangle) {
+        area = (s2 * s3) / 2; 
+    }
+    else if (select_figure == quadrangle) { 
+        area = (s2 * s3);
+    }
+    else if (select_figure == circle) {
+        area = 3.14 * s2 * s2;  
+    }
+
+    return area;
+}
+
+void main() {
+    int area;
+    base_print();
+    area = figure_area();
+    printf("면적은 %d입니다.\n", area);
+}
