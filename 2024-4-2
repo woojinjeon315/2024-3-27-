@@ -1,3 +1,26 @@
+import java.util.Scanner;
+
+public class A {
+    
+    static int Area(int Ax, int Ay, int Bx, int By, int Cx, int Cy) {
+        int ss = 0;
+        ss += Ax * By - Ay * Bx;
+        ss += Bx * Cy - By * Cx;
+        ss += Cx * Ay - Cy * Ax;
+        return Math.abs(ss/2);
+    }
+    
+    public static void main(String[] args) {
+        System.out.println(Area(0,0, 2,0, 0,1));
+
+        int[]a = {0,0}, b = {2,0}, c = {0,1};
+        System.out.println(Area(a, b, c));
+
+        int[][] p = {{0,0},{2,0},{0,1}};
+        System.out.println(Area(p));
+    }
+}
+
 def solution(s):
     
     
