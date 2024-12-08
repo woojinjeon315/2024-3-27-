@@ -1,4 +1,21 @@
-include<stdio.h>
+#include <stdio.h>
 
-void main(){
+void decrypt_file(const char* input_filename, const char* output_filename) {
+	FILE* input_file = fopen(input_filename, "rb");
+	FILE* output_file = fopen(output_filename, "wb");
+
+	if (input_file == NULL || output_filename == NULL) {
+		printf("파일 오픈 오류 \n");
+		return;
+	}
+	int ch;
+	while ((ch = fgetc(input_file)) != NULL) {
+		fputc(ch ^ 0xFF, output_file);
+	}
+}
+
+
+
+void main() {
+	decrypt_file("questions.bin", "questions.txt");
 }
