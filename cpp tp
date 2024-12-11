@@ -19,3 +19,28 @@ void decrypt_file(const char* input_filename, const char* output_filename) {
 void main() {
 	decrypt_file("questions.bin", "questions.txt");
 }
+
+
+))))))))))))))))))))))
+
+#include <stdio.h>
+
+void make_file() {
+	char text[100] = "123456789";
+	FILE* fp0 = fopen("questions_ft.bin", "w");
+	FILE* fp1 = fopen("questions.txt", "w");
+	fputs(text, fp0);
+	fputs(text, fp1);
+	fclose(fp0);
+	fclose(fp1);
+	int ch;
+	while ((ch = fgetc(text)) != NULL) {
+		fputc(ch ^ 0xFF, fp1);
+	}
+}
+
+
+
+void main() {
+	make_file();
+}
