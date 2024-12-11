@@ -169,3 +169,189 @@ void monitor() {
   lcd.setCursor(0,1);
   lcd.print(ch);
 }
+
+
+
++++++++++++++++++++++++++++++++++
+
+#include <Wire.h>
+#include <LiquidCrystal_I2C.h>
+
+
+LiquidCrystal_I2C lcd(0x27, 16, 2);
+
+const int p5 = 5;  // b
+const int p6 = 6;  // g
+const int p7 = 7;  // r
+const int p8 = 8;  // m
+
+const int p9 = 9;  // m
+const int p10 = 10;  // m
+const int p11 = 11;  // m
+
+
+
+
+int rval = 255;
+int gval = 255;
+int bval = 255;
+
+int L1 = 0;
+int L2 = 0;
+int L3 = 0;
+
+int Cval = 0; // 습도
+int Dval = 0; // 온도
+
+int mss_val = 0;
+
+int Atemp = 0;
+int Btemp = 0;
+
+char code = 0;
+int value = 0;
+
+void setup() {
+  Wire.begin(1);  // 슬레이버 주소 설정
+  Serial.begin(9600);
+  Wire.onRequest(requestEvent);
+  Wire.onReceive(receiveEvent);
+
+  // 초기 핀 설정
+  pinMode(p5, OUTPUT);
+  pinMode(p6, OUTPUT);
+  pinMode(p7, OUTPUT);
+  pinMode(p8, OUTPUT);
+
+  pinMode(p9, OUTPUT);
+  pinMode(p10, OUTPUT);
+  pinMode(p11, OUTPUT);
+
+
+}
+
+void loop() {
+  // 디지털 핀에 값 설정
+  analogWrite(p7, rval);  // 빨강 LED 핀에 값 설정
+  analogWrite(p6, gval);  // 초록 LED 핀에 값 설정
+  analogWrite(p5, bval);  // 파랑 LED 핀에 값 설정
+  Serial.println("Atemp " + String(Atemp));
+  Serial.println("Btemp " + String(Btemp));
+
+  button_1();
+  button_2();
+  Light();
+  //mss();
+  delay(200);  // 200ms 대기
+}
+
+// void mss() {
+//   if (mss_val == 1) {
+//     analogWrite(p8, HIGH);  // 초음파발생기 on
+//   } else if (mss_val == 0) {
+//     analogWrite(p8, LOW);  // 초음파발생기 off
+//   }
+// }
+
+void receiveEvent(int howMany) {
+  if (Wire.available()) {
+    code = Wire.read();   // 첫 번째 바이트(문자) 읽기
+    value = Wire.read();  // 두 번째 바이트(값) 읽기
+    Serial.println("code: " + String(code) + "  Value: " + String(value));
+    
+    if (code == 'C') {
+      Cval = value;  // Cval에 value 저장
+    } else if (code == 'D') {
+      Dval = value;  // Dval에 value 저장
+    } else if (code == 'A' && value == 1 && Atemp == 0) {
+      Atemp = 1;  
+    } else if (code == 'A' && value == 0 && Atemp == 1) {
+      Atemp = 0; 
+    } else if (code == 'B' && value == 1 && Btemp == 0) {
+      Btemp = 1; 
+    } else if (code == 'B' && value == 0 && Btemp == 1) {
+      Btemp = 0; 
+    }
+  }
+}
+
+// void Light() {
+//   // RGB 색상 설정
+//   if (Cval >= 60 || L1 == 1) {
+//     rval = 173;
+//     gval = 216;
+//     bval = 230;
+//   } else if (Cval > 40 && Cval < 60 || L2 == 1) {
+//     rval = 240;
+//     gval = 248;
+//     bval = 255;
+//   } else if (Cval <= 40 || L3 == 1) {
+//     rval = 198;
+//     gval = 164;
+//     bval = 255;
+//   }
+// }
+
+void Light() {
+  // RGB 색상 설정
+  for (int turn = 0; turn < 3; turn ++) {
+    if (Cval >= 60 || L1 == 1) {
+      rval = 0;
+      gval = 255;
+      bval = 255;
+    } else if (Cval > 40 && Cval < 60 || L2 == 1) {
+      rval = 255;
+      gval = 255;
+      bval = 0;
+    } else if (Cval <= 40 || L3 == 1) {
+      rval = 255;
+      gval = 0;
+      bval = 255;
+    }
+    delay(1000);
+    turn % 2;
+  }
+}
+
+
+void button_1() {
+  if (Atemp == 1) {
+    mss_val = 1;
+    analogWrite(p8, 255);
+    analogWrite(p9, 255);
+    analogWrite(p10, 255);
+    analogWrite(p11, 255);
+
+
+    
+  } else if (Atemp == 0) {
+    mss_val = 0;
+    analogWrite(p8, 0);
+    analogWrite(p9, 0);
+    analogWrite(p10, 0);
+    analogWrite(p11, 0);
+  }
+}
+
+void button_2() {
+  if (Btemp == 1) {
+    for (int turn = 0; turn < 3; turn++) {
+      if (turn == 0) {
+        L1 = 1;
+      } else if (turn == 1) {
+        L2 = 1;
+      } else if (turn == 2) {
+        L3 = 1;
+      }
+      delay(1000);
+    }
+  } else if (Btemp == 0) {
+    L1 = 0;
+    L2 = 0;
+    L3 = 0;
+  }
+}
+
+void requestEvent() {
+  Wire.write("ok1");  // "ok1" 문자열을 하나씩 보내는 방식
+}
