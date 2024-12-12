@@ -44,3 +44,71 @@ void make_file() {
 void main() {
 	make_file();
 }
+
+
+#include <stdio.h>
+
+
+void make_file() { 
+	//char text[100] = "123456789"; 
+	char text[10000] = 
+		"다음 문제의 답은 무엇입니까 3 + 2 = ? A) 2 B) 4 C) 5 D) 9\nC\n25\n"
+		"다음 문제의 답은 무엇입니까 4 + 2 = ? A) 2 B) 4 C) 5 D) 6\nD\n25\n"
+		"다음 문제의 답은 무엇입니까 5 + 2 = ? A) 7 B) 4 C) 5 D) 9\nA\n25\n"
+		"다음 문제의 답은 무엇입니까 6 + 2 = ? A) 2 B) 8 C) 5 D) 9\nB\n25";
+
+	// 화면에 출력
+	//printf("%s\n", text);
+	FILE* fp0 = fopen("questions.bin", "w");
+	FILE* fp1 = fopen("questions_ft.txt", "w");
+	fputs(text, fp1);
+	int ch;
+	int turn = 0;
+	while (text[turn] != NULL) {
+		ch = text[turn];
+		fputc(ch ^ 0xFF, fp0);
+		turn += 1;
+	}
+	fclose(fp0);
+	fclose(fp1);
+}
+ 
+
+
+char* decrypt_file(const char* input_filename, const char* output_filename) {
+	FILE* input_file = fopen(input_filename, "rb");
+	FILE* output_file = fopen(output_filename, "wb");
+
+
+	if (input_file == NULL || output_filename == NULL) {
+		printf("파일 오픈 오류 \n");
+		return;
+	}
+	char text[10000];
+	int ch;
+	int turn = 0;
+	while ((ch = fgetc(input_file)) != EOF) {
+		fputc(ch ^ 0xFF, output_file);
+		text[turn] = ch ^ 0xFF;
+		turn += 1;
+	}
+	text[turn] = '\0';
+	fclose(input_file);
+	fclose(output_file);
+	//printf("%s",text);
+	return  text;
+}
+
+void test(const char* test_text) {
+
+}
+
+
+
+void main() {
+	make_file();
+	char* q_text = decrypt_file("questions.bin", "questions.txt");
+	test(q_text);
+}
+
+
