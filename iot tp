@@ -636,3 +636,308 @@ void button_2() {
 void requestEvent() {
   Wire.write("ok1");  // "ok1" 문자열을 하나씩 보내는 방식
 }
+
+
+
+#include <Wire.h>
+#include <LiquidCrystal_I2C.h>
+#include <DHT.h>
+
+
+#define DHTTYPE DHT11
+#define DHTPIN 2
+DHT dht(DHTPIN, DHTTYPE);
+
+LiquidCrystal_I2C lcd_1(0x26, 16, 2);
+
+void setup() {
+  Wire.begin();
+  Serial.begin(9600);
+  Serial.println("DHT11 센서 테스트");
+  dht.begin();
+  pinMode(8, INPUT);
+  pinMode(7, INPUT);
+  lcd_1.init();
+  lcd_1.backlight();
+}
+
+void loop() {
+  int A = digitalRead(8);
+  Serial.println("A: " + String(A));
+  monitor_1();
+
+  Wire.beginTransmission(1);
+  Wire.write('A');
+  Wire.write((byte)A);
+  Wire.endTransmission();
+  delay(200);
+
+  int B = digitalRead(7);
+  Serial.println("B: " + String(B));
+
+  Wire.beginTransmission(1);
+  Wire.write('B');
+  Wire.write((byte)B);
+  Wire.endTransmission();
+  delay(200);
+
+  readTemperature();
+}
+
+void readTemperature() {
+  float temperature = dht.readTemperature();
+  float humidity = dht.readHumidity();
+
+  if (isnan(temperature) || isnan(humidity)) {
+    Serial.println("DHT 센서로부터 데이터를 읽을 수 없습니다!");
+    return;
+  }
+
+  Serial.println("C: " + String(humidity)); // 습도
+  Serial.println("D: " + String(temperature)); // 온도
+
+  Wire.beginTransmission(1);
+  Wire.write('C');
+  Wire.write((byte)humidity);
+  Wire.endTransmission();
+
+  Wire.beginTransmission(1);
+  Wire.write('D');
+  Wire.write((byte)temperature);
+  Wire.endTransmission();
+}
+
+void monitor_1() {
+  float temperature = dht.readTemperature();
+  float humidity = dht.readHumidity();
+
+  lcd_1.clear();
+  lcd_1.setCursor(0, 0);
+  lcd_1.print("Temp: ");
+  lcd_1.print(temperature);
+  lcd_1.print(" C");
+
+  lcd_1.setCursor(0, 1);
+  lcd_1.print("Hum: ");
+  lcd_1.print(humidity);
+  lcd_1.print(" %");
+}
+
+
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+
+
+
+#include <Wire.h>
+#include <LiquidCrystal_I2C.h>
+
+LiquidCrystal_I2C lcd_2(0x27, 16, 2);
+
+const int p5 = 5;  // b
+const int p6 = 6;  // g
+const int p7 = 7;  // r
+const int p8 = 8;  // m
+
+const int p9 = 9;  // m
+const int p10 = 10;  // m
+const int p11 = 11;  // m
+
+int a = 0;
+int time = 0;
+
+int ss = 0;
+
+int rval = 255;
+int gval = 255;
+int bval = 255;
+
+int L1 = 0;
+int L2 = 0;
+int L3 = 0;
+
+int Cval = 0; // 습도
+int Dval = 0; // 온도
+
+int mss_val = 0;
+
+int Atemp = 0;
+int Btemp = 0;
+
+char code = 0;
+int value = 0;
+
+void setup() {
+  Wire.begin(1);
+  Serial.begin(9600);
+  Wire.onRequest(requestEvent);
+  Wire.onReceive(receiveEvent);
+
+  pinMode(p5, OUTPUT);
+  pinMode(p6, OUTPUT);
+  pinMode(p7, OUTPUT);
+  pinMode(p8, OUTPUT);
+
+  pinMode(p9, OUTPUT);
+  pinMode(p10, OUTPUT);
+  pinMode(p11, OUTPUT);
+
+
+}
+
+void loop() {
+  analogWrite(p7, rval);  // 빨
+  analogWrite(p6, gval);  // 초
+  analogWrite(p5, bval);  // 파
+  Serial.println("Atemp " + String(Atemp));
+  Serial.println("Btemp " + String(Btemp));
+  Serial.println("time" + String(time));
+  monitor_2();
+  L_S();
+  button_1();
+  button_2();
+  Light();
+  time += 1;
+  delay(200); 
+}
+
+void receiveEvent(int howMany) {
+  if (Wire.available()) {
+    code = Wire.read();
+    value = Wire.read(); 
+    Serial.println("code: " + String(code) + "  Value: " + String(value));
+    
+    if (code == 'C') {
+      Cval = value;
+    } else if (code == 'D') {
+      Dval = value;
+    } else if (code == 'A' && value == 1 && Atemp == 0) {
+      Atemp = 1;  
+    } else if (code == 'A' && value == 0 && Atemp == 1) {
+      Atemp = 0;
+    } else if (code == 'B' && value == 1 && Btemp == 0) {
+      Btemp = 1; 
+    } else if (code == 'B' && value == 0 && Btemp == 1) {
+      Btemp = 0;
+    }
+  }
+}
+
+
+
+void Light() {
+    if (L1 == 1) {
+      rval = 0;
+      gval = 255;
+      bval = 255;
+    } else if (L2 == 1) {
+      rval = 255;
+      gval = 255;
+      bval = 0;
+    } else if (L3 == 1) {
+      rval = 255;
+      gval = 0;
+      bval = 255;
+    }
+}
+
+void L_S() {
+    if (Cval >= 60 && Btemp == 0) {
+      L1 = 1;
+      L2 = 0;
+      L3 = 0;
+    }
+    else if (Cval > 40 && Cval < 60 && Btemp == 0) {
+      L1 = 0;
+      L2 = 1;
+      L3 = 0;
+    }
+    else if (Cval <= 40 && Btemp == 0) {
+      L1 = 0;
+      L2 = 0;
+      L3 = 1;
+    }
+}
+
+
+void button_1() {
+  if (Atemp == 1) {
+    mss_val = 1;
+    analogWrite(p8, 255);
+    analogWrite(p9, 255);
+    analogWrite(p10, 255);
+    analogWrite(p11, 255);
+    ss = 1;
+  } else if (Atemp == 0) {
+    mss_val = 0;
+    analogWrite(p8, 0);
+    analogWrite(p9, 0);
+    analogWrite(p10, 0);
+    analogWrite(p11, 0);
+    ss = 0;
+  }
+}
+
+void button_2() {
+  if (Btemp == 1) {
+    if (time % 2 == 0) {
+      L1 = 1;
+      L2 = 0;
+      L3 = 0;
+    }
+    else if (time % 3 == 0) {
+      L1 = 0;
+      L2 = 1;
+      L3 = 0;
+    }
+    else if (time % 5 == 0) {
+      L1 = 0;
+      L2 = 0;
+      L3 = 1;
+    }
+  }
+
+}
+
+void monitor_2(){
+  char clear[20] = "                 ";
+  char name_1[20] = "input LCD";
+
+  char text_ss_ON[20] = ("supersonic ON");
+  char text_ss_OFF[20] = ("supersonic OFF");
+  char RGB_1[20] = "000255255";;
+  char RGB_2[20] = "255000255";
+  char RGB_3[20] = "255255000";
+  char text_RGB[20] = ("LED_RGB");
+
+  lcd_2.init();
+  lcd_2.backlight();
+  lcd_2.setCursor(0,0);
+  lcd_2.print(clear);
+  if (ss == 0) {
+  lcd_2.setCursor(0,0);
+  lcd_2.print(text_ss_OFF);
+  }
+  else if (ss == 1) {
+  lcd_2.setCursor(0,0);
+  lcd_2.print(text_ss_ON);
+  }   
+  lcd_2.setCursor(0,1);
+  lcd_2.print(clear);
+  lcd_2.setCursor(0,1);
+  lcd_2.print("RGB ");
+  if (L1 == 1) {
+  lcd_2.print(RGB_1);
+  } 
+  else if (L2 == 1) {
+  lcd_2.print(RGB_2);
+  }
+  else if (L3 == 1) {
+  lcd_2.print(RGB_3);
+  } 
+}
+
+void requestEvent() {
+  Wire.write("ok1");  // "ok1" 문자열을 하나씩 보내는 방식
+}
