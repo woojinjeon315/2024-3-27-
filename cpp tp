@@ -112,3 +112,130 @@ void main() {
 }
 
 
+$$$$$$$$$$$$$$$$$$$$$
+
+#include <stdio.h>
+#include <string.h>
+
+void make_file() { 
+
+	//char text[100] = "123456789"; 
+	char text[10000] = 
+		"다음 문제의 답은 무엇입니까 3 + 2 = ? A) 2 B) 4 C) 5 D) 9\nC\n25\n"
+		"다음 문제의 답은 무엇입니까 4 + 2 = ? A) 2 B) 4 C) 5 D) 6\nD\n25\n"
+		"다음 문제의 답은 무엇입니까 5 + 2 = ? A) 7 B) 4 C) 5 D) 9\nA\n25\n"
+		"다음 문제의 답은 무엇입니까 6 + 2 = ? A) 2 B) 8 C) 5 D) 9\nB\n25";
+
+	FILE* fp0 = fopen("questions.bin", "w");
+	FILE* fp1 = fopen("questions_ft.txt", "w");
+	fputs(text, fp1);
+	int ch;
+	int turn = 0;
+	while (text[turn] != NULL) {
+		ch = text[turn];
+		fputc(ch ^ 0xFF, fp0);
+		turn += 1;
+	}
+	fclose(fp0);
+	fclose(fp1);
+}
+ 
+
+
+char* decrypt_file(const char* input_filename, const char* output_filename) {
+	FILE* input_file = fopen(input_filename, "rb");
+	FILE* output_file = fopen(output_filename, "wb");
+
+
+	if (input_file == NULL || output_filename == NULL) {
+		printf("파일 오픈 오류 \n");
+		return;
+	}
+	char text[10000];
+	int ch;
+	int turn = 0;
+	while ((ch = fgetc(input_file)) != EOF) {
+		fputc(ch ^ 0xFF, output_file);
+		text[turn] = ch ^ 0xFF;
+		turn += 1;
+	}
+	text[turn] = '\0';
+	fclose(input_file);
+	fclose(output_file);
+	return  text;
+}
+
+
+void test(const char* test_text) {
+    char text[20][200] = { 0 }; 
+    int turn_1 = 0; 
+    int turn_2 = 0;
+    int turn_3 = 0; 
+
+    
+    while (test_text[turn_1] != '\0') {
+        if (test_text[turn_1] == '\n') {
+            text[turn_2][turn_3] = '\0'; 
+            turn_2 += 1; 
+            turn_3 = 0; 
+        }
+        else {
+            text[turn_2][turn_3] = test_text[turn_1]; 
+            turn_3 += 1; 
+        }
+        turn_1 += 1; 
+    }
+    text[turn_2][turn_3] = '\0';
+
+    int q_count = (turn_2 + 1) / 3; 
+
+    char answer[5];
+    int c_answer = 3; 
+    int score = 0;
+
+    for (int turn_4 = 0; turn_4 <= turn_2; turn_4++) {
+        int mod = turn_4 % 3;
+        if (mod == 0) {
+            printf("%s\n", text[turn_4]);
+        }
+        else if (mod == 1) {
+            scanf_s("%4s", answer, sizeof(answer));
+            if (strcmp(answer, text[turn_4]) == 0) {
+                c_answer = 1;
+                printf("정답입니다.\n");
+            }
+            else {
+                c_answer = 0;
+                printf("오답입니다.\n");
+            }
+        }
+        else if (mod == 2) {
+            int score_temp = 0;
+            if (c_answer == 1) {
+                int score_len = strlen(text[turn_4]);
+                for (int turn_5 = 0; turn_5 < score_len; turn_5++) {
+                    score_temp = text[turn_4][turn_5] - 48;
+                    for (int score_turn = 1; score_turn < score_len - turn_5; score_turn++) {
+                         score_temp *= 10;
+                    }
+                    score += score_temp;
+                }
+            }
+            c_answer = 3;
+        }
+    }
+
+    printf("총점은 %d입니다.\n", score);
+}
+
+
+
+void main() {
+	make_file();
+	char* q_text = decrypt_file("questions.bin", "questions.txt");
+	test(q_text);
+}
+
+
+
+
