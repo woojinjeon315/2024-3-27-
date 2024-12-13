@@ -117,32 +117,32 @@ $$$$$$$$$$$$$$$$$$$$$
 #include <stdio.h>
 #include <string.h>
 
-void make_file() { 
-
-	//char text[100] = "123456789"; 
-	char text[10000] = 
-		"다음 문제의 답은 무엇입니까 3 + 2 = ? A) 2 B) 4 C) 5 D) 9\nC\n25\n"
-		"다음 문제의 답은 무엇입니까 4 + 2 = ? A) 2 B) 4 C) 5 D) 6\nD\n25\n"
-		"다음 문제의 답은 무엇입니까 5 + 2 = ? A) 7 B) 4 C) 5 D) 9\nA\n25\n"
-		"다음 문제의 답은 무엇입니까 6 + 2 = ? A) 2 B) 8 C) 5 D) 9\nB\n25";
-
-	FILE* fp0 = fopen("questions.bin", "w");
-	FILE* fp1 = fopen("questions_ft.txt", "w");
-	fputs(text, fp1);
-	int ch;
-	int turn = 0;
-	while (text[turn] != NULL) {
-		ch = text[turn];
-		fputc(ch ^ 0xFF, fp0);
-		turn += 1;
-	}
-	fclose(fp0);
-	fclose(fp1);
-}
+//void make_file() { //questions.bin 파일만드는 함수 제출할떄는 제거해야함
+//
+//	//char text[100] = "123456789"; 
+//	char text[10000] = 
+//		"다음 문제의 답은 무엇입니까 3 + 2 = ? A) 2 B) 4 C) 5 D) 9\nC\n25\n"
+//		"다음 문제의 답은 무엇입니까 4 + 2 = ? A) 2 B) 4 C) 5 D) 6\nD\n25\n"
+//		"다음 문제의 답은 무엇입니까 5 + 2 = ? A) 7 B) 4 C) 5 D) 9\nA\n25\n"
+//		"다음 문제의 답은 무엇입니까 6 + 2 = ? A) 2 B) 8 C) 5 D) 9\nB\n25";
+//
+//	FILE* fp0 = fopen("questions.bin", "w");
+//	FILE* fp1 = fopen("questions_ft.txt", "w");
+//	fputs(text, fp1);
+//	int ch;
+//	int turn = 0;
+//	while (text[turn] != NULL) {
+//		ch = text[turn];
+//		fputc(ch ^ 0xFF, fp0);
+//		turn += 1;
+//	}
+//	fclose(fp0);
+//	fclose(fp1);
+//}
  
 
 
-char* decrypt_file(const char* input_filename, const char* output_filename) {
+char* decrypt_file(const char* input_filename, const char* output_filename) { //파일 복호화함수
 	FILE* input_file = fopen(input_filename, "rb");
 	FILE* output_file = fopen(output_filename, "wb");
 
@@ -166,7 +166,7 @@ char* decrypt_file(const char* input_filename, const char* output_filename) {
 }
 
 
-void test(const char* test_text) {
+void test(const char* test_text) { //시험 보는 함수
     char text[20][200] = { 0 }; 
     int turn_1 = 0; 
     int turn_2 = 0;
@@ -235,7 +235,3 @@ void main() {
 	char* q_text = decrypt_file("questions.bin", "questions.txt");
 	test(q_text);
 }
-
-
-
-
