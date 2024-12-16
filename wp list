@@ -20,150 +20,6 @@
   <tbody>
     <tr>
       <td>A</td>
-      <td>생활예절과옷차림</td>
-      <td>장현주</td>
-      <td>0</td>
-      <td>2</td>
-      <td>25031</td>
-      <td>4.52</td>
-      <td>29.0</td>
-      <td>42</td>
-      <td>30</td>
-      <td>수1</td>
-      <td>수2</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>A</td>
-      <td>토익영어</td>
-      <td>양용준</td>
-      <td>0</td>
-      <td>2</td>
-      <td>92161</td>
-      <td>4.60</td>
-      <td>88.0</td>
-      <td>64</td>
-      <td>60</td>
-      <td>화10</td>
-      <td>화11</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>A</td>
-      <td>대중문학과문화</td>
-      <td>김진철</td>
-      <td>0</td>
-      <td>2</td>
-      <td>23032</td>
-      <td>4.61</td>
-      <td>41.0</td>
-      <td>73</td>
-      <td>60</td>
-      <td>수8</td>
-      <td>수9</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>A</td>
-      <td>프리젠테이션기법</td>
-      <td>이봉규</td>
-      <td>2</td>
-      <td>2</td>
-      <td>21281</td>
-      <td>4.62</td>
-      <td>239.0</td>
-      <td>113</td>
-      <td>100</td>
-      <td>토5</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>A</td>
-      <td>체육과학의이해</td>
-      <td>노병주</td>
-      <td>1</td>
-      <td>2</td>
-      <td>22421</td>
-      <td>4.62</td>
-      <td>29.0</td>
-      <td>65</td>
-      <td>60</td>
-      <td>화8</td>
-      <td>화9</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>A</td>
-      <td>PR의이해</td>
-      <td>이서현</td>
-      <td>2</td>
-      <td>2</td>
-      <td>21001</td>
-      <td>4.62</td>
-      <td>125.0</td>
-      <td>153</td>
-      <td>100</td>
-      <td>금1</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>A</td>
-      <td>정보통신과컴퓨터개론</td>
-      <td>김강석</td>
-      <td>0</td>
-      <td>2</td>
-      <td>24292</td>
-      <td>4.64</td>
-      <td>61.0</td>
-      <td>45</td>
-      <td>40</td>
-      <td>월3</td>
-      <td>월4</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>A</td>
-      <td>음악여행</td>
-      <td>정주희</td>
-      <td>0</td>
-      <td>2</td>
-      <td>24251</td>
-      <td>4.64</td>
-      <td>104.0</td>
-      <td>103</td>
-      <td>100</td>
-      <td>목1</td>
-      <td>목2</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>A</td>
-      <td>영어어법산책</td>
-      <td>양용쥰</td>
-      <td>0</td>
-      <td>2</td>
-      <td>21181</td>
-      <td>4.65</td>
-      <td>184.0</td>
-      <td>83</td>
-      <td>60</td>
-      <td>수6</td>
-      <td>수7</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>A</td>
       <td>미디어의이해</td>
       <td>이서현</td>
       <td>0</td>
@@ -171,134 +27,6 @@
       <td>21101</td>
       <td>4.65</td>
       <td>34.0</td>
-      <td>50</td>
-      <td>40</td>
-      <td>화6</td>
-      <td>화7</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>A</td>
-      <td>대중문학과문화</td>
-      <td>권유성</td>
-      <td>0</td>
-      <td>2</td>
-      <td>24031</td>
-      <td>4.69</td>
-      <td>108.0</td>
-      <td>76</td>
-      <td>60</td>
-      <td>수8</td>
-      <td>수9</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>A</td>
-      <td>교양탁구</td>
-      <td>서태범</td>
-      <td>0</td>
-      <td>2</td>
-      <td>23052</td>
-      <td>4.69</td>
-      <td>35.0</td>
-      <td>32</td>
-      <td>30</td>
-      <td>수5</td>
-      <td>수6</td>
-      <td>수7</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>A</td>
-      <td>기초수학</td>
-      <td>유상욱</td>
-      <td>0</td>
-      <td>2</td>
-      <td>22051</td>
-      <td>4.58</td>
-      <td>83.0</td>
-      <td>62</td>
-      <td>60</td>
-      <td>월6</td>
-      <td>월7</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>A</td>
-      <td>세계시민격</td>
-      <td>최현,이재섭</td>
-      <td>0</td>
-      <td>2</td>
-      <td>25041</td>
-      <td>4.70</td>
-      <td>37.0</td>
-      <td>68</td>
-      <td>60</td>
-      <td>수8</td>
-      <td>수9</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>A</td>
-      <td>생활속의무역</td>
-      <td>홍재성</td>
-      <td>2</td>
-      <td>2</td>
-      <td>24181</td>
-      <td>4.73</td>
-      <td>126.0</td>
-      <td>220</td>
-      <td>120</td>
-      <td>토4</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>A</td>
-      <td>중국문화의이해</td>
-      <td>정민경</td>
-      <td>0</td>
-      <td>2</td>
-      <td>25151</td>
-      <td>4.74</td>
-      <td>35.0</td>
-      <td>70</td>
-      <td>60</td>
-      <td>수8</td>
-      <td>수9</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>A</td>
-      <td>환경과공해</td>
-      <td>이현정</td>
-      <td>0</td>
-      <td>2</td>
-      <td>22521</td>
-      <td>4.74</td>
-      <td>19.0</td>
-      <td>74</td>
-      <td>60</td>
-      <td>월6</td>
-      <td>월7</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>A</td>
-      <td>국제안보와제주</td>
-      <td>이민구</td>
-      <td>0</td>
-      <td>2</td>
-      <td>26021</td>
-      <td>4.76</td>
-      <td>38.0</td>
       <td>50</td>
       <td>40</td>
       <td>화6</td>
@@ -420,65 +148,33 @@
     </tr>
     <tr>
       <td>A</td>
-      <td>생활과화학</td>
-      <td>임희정</td>
+      <td>국제안보와제주</td>
+      <td>이민구</td>
       <td>0</td>
       <td>2</td>
-      <td>22181</td>
-      <td>4.72</td>
-      <td>72.0</td>
-      <td>47</td>
+      <td>26021</td>
+      <td>4.76</td>
+      <td>38.0</td>
+      <td>50</td>
       <td>40</td>
-      <td>화1</td>
-      <td>화2</td>
+      <td>화6</td>
+      <td>화7</td>
       <td>NaN</td>
       <td>NaN</td>
     </tr>
     <tr>
       <td>A</td>
-      <td>도박중독과상담</td>
-      <td>김성봉,윤인노</td>
+      <td>생활예절과옷차림</td>
+      <td>장현주</td>
       <td>0</td>
       <td>2</td>
-      <td>23121</td>
-      <td>4.57</td>
-      <td>99.0</td>
-      <td>71</td>
-      <td>60</td>
+      <td>25031</td>
+      <td>4.52</td>
+      <td>29.0</td>
+      <td>42</td>
+      <td>30</td>
       <td>수1</td>
       <td>수2</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>A</td>
-      <td>지구시스템이해</td>
-      <td>윤석훈,문재홍,송상근,김정현,김진호</td>
-      <td>0</td>
-      <td>2</td>
-      <td>22571</td>
-      <td>4.59</td>
-      <td>22.0</td>
-      <td>60</td>
-      <td>60</td>
-      <td>월6</td>
-      <td>월7</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>A</td>
-      <td>생명과학개론</td>
-      <td>김찬식</td>
-      <td>1</td>
-      <td>2</td>
-      <td>23231</td>
-      <td>4.48</td>
-      <td>77.0</td>
-      <td>92</td>
-      <td>60</td>
-      <td>목1</td>
-      <td>목2</td>
       <td>NaN</td>
       <td>NaN</td>
     </tr>
@@ -495,6 +191,22 @@
       <td>40</td>
       <td>화7</td>
       <td>화8</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>A</td>
+      <td>생명과학개론</td>
+      <td>김찬식</td>
+      <td>1</td>
+      <td>2</td>
+      <td>23231</td>
+      <td>4.48</td>
+      <td>77.0</td>
+      <td>92</td>
+      <td>60</td>
+      <td>목1</td>
+      <td>목2</td>
       <td>NaN</td>
       <td>NaN</td>
     </tr>
@@ -580,6 +292,246 @@
     </tr>
     <tr>
       <td>A</td>
+      <td>미디어리터러시</td>
+      <td>최낙진,이서현</td>
+      <td>0</td>
+      <td>2</td>
+      <td>21312</td>
+      <td>4.50</td>
+      <td>14.0</td>
+      <td>62</td>
+      <td>60</td>
+      <td>목6</td>
+      <td>목7</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>A</td>
+      <td>중국문화의이해</td>
+      <td>정민경</td>
+      <td>0</td>
+      <td>2</td>
+      <td>25151</td>
+      <td>4.74</td>
+      <td>35.0</td>
+      <td>70</td>
+      <td>60</td>
+      <td>수8</td>
+      <td>수9</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>A</td>
+      <td>환경과공해</td>
+      <td>이현정</td>
+      <td>0</td>
+      <td>2</td>
+      <td>22521</td>
+      <td>4.74</td>
+      <td>19.0</td>
+      <td>74</td>
+      <td>60</td>
+      <td>월6</td>
+      <td>월7</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>A</td>
+      <td>생활속의무역</td>
+      <td>홍재성</td>
+      <td>2</td>
+      <td>2</td>
+      <td>24181</td>
+      <td>4.73</td>
+      <td>126.0</td>
+      <td>220</td>
+      <td>120</td>
+      <td>토4</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>A</td>
+      <td>철학의이해</td>
+      <td>이서규,김태현</td>
+      <td>0</td>
+      <td>2</td>
+      <td>22411</td>
+      <td>4.58</td>
+      <td>12.0</td>
+      <td>58</td>
+      <td>60</td>
+      <td>화1</td>
+      <td>화2</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>A</td>
+      <td>공학윤리</td>
+      <td>이용길</td>
+      <td>0</td>
+      <td>2</td>
+      <td>72402</td>
+      <td>4.58</td>
+      <td>12.0</td>
+      <td>28</td>
+      <td>30</td>
+      <td>금5</td>
+      <td>금6</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>A</td>
+      <td>공학윤리</td>
+      <td>이용길</td>
+      <td>0</td>
+      <td>2</td>
+      <td>72401</td>
+      <td>4.58</td>
+      <td>12.0</td>
+      <td>34</td>
+      <td>30</td>
+      <td>금3</td>
+      <td>금4</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>A</td>
+      <td>지구시스템이해</td>
+      <td>윤석훈,문재홍,송상근,김정현,김진호</td>
+      <td>0</td>
+      <td>2</td>
+      <td>22571</td>
+      <td>4.59</td>
+      <td>22.0</td>
+      <td>60</td>
+      <td>60</td>
+      <td>월6</td>
+      <td>월7</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>A</td>
+      <td>토익영어</td>
+      <td>양용준</td>
+      <td>0</td>
+      <td>2</td>
+      <td>92161</td>
+      <td>4.60</td>
+      <td>88.0</td>
+      <td>64</td>
+      <td>60</td>
+      <td>화10</td>
+      <td>화11</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>A</td>
+      <td>대중문학과문화</td>
+      <td>김진철</td>
+      <td>0</td>
+      <td>2</td>
+      <td>23032</td>
+      <td>4.61</td>
+      <td>41.0</td>
+      <td>73</td>
+      <td>60</td>
+      <td>수8</td>
+      <td>수9</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>A</td>
+      <td>프리젠테이션기법</td>
+      <td>이봉규</td>
+      <td>2</td>
+      <td>2</td>
+      <td>21281</td>
+      <td>4.62</td>
+      <td>239.0</td>
+      <td>113</td>
+      <td>100</td>
+      <td>토5</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>A</td>
+      <td>PR의이해</td>
+      <td>이서현</td>
+      <td>2</td>
+      <td>2</td>
+      <td>21001</td>
+      <td>4.62</td>
+      <td>125.0</td>
+      <td>153</td>
+      <td>100</td>
+      <td>금1</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>A</td>
+      <td>체육과학의이해</td>
+      <td>노병주</td>
+      <td>1</td>
+      <td>2</td>
+      <td>22421</td>
+      <td>4.62</td>
+      <td>29.0</td>
+      <td>65</td>
+      <td>60</td>
+      <td>화8</td>
+      <td>화9</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>A</td>
+      <td>정보통신과컴퓨터개론</td>
+      <td>김강석</td>
+      <td>0</td>
+      <td>2</td>
+      <td>24292</td>
+      <td>4.64</td>
+      <td>61.0</td>
+      <td>45</td>
+      <td>40</td>
+      <td>월3</td>
+      <td>월4</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>A</td>
+      <td>음악여행</td>
+      <td>정주희</td>
+      <td>0</td>
+      <td>2</td>
+      <td>24251</td>
+      <td>4.64</td>
+      <td>104.0</td>
+      <td>103</td>
+      <td>100</td>
+      <td>목1</td>
+      <td>목2</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>A</td>
       <td>한국의대중가요와한국문화</td>
       <td>조유영</td>
       <td>0</td>
@@ -595,327 +547,87 @@
       <td>NaN</td>
     </tr>
     <tr>
-      <td>B</td>
-      <td>창업과경영</td>
-      <td>박설우,배창봉</td>
+      <td>A</td>
+      <td>영어어법산책</td>
+      <td>양용쥰</td>
       <td>0</td>
       <td>2</td>
-      <td>24341</td>
-      <td>4.19</td>
-      <td>21.0</td>
-      <td>59</td>
+      <td>21181</td>
+      <td>4.65</td>
+      <td>184.0</td>
+      <td>83</td>
       <td>60</td>
-      <td>수3</td>
-      <td>수4</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>B</td>
-      <td>교양테니스</td>
-      <td>제갈윤석</td>
-      <td>0</td>
-      <td>2</td>
-      <td>23061</td>
-      <td>4.27</td>
-      <td>55.0</td>
-      <td>33</td>
-      <td>30</td>
-      <td>월6</td>
-      <td>월7</td>
-      <td>월8</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>B</td>
-      <td>예비부모교육</td>
-      <td>박정환</td>
-      <td>2</td>
-      <td>2</td>
-      <td>26411</td>
-      <td>4.21</td>
-      <td>67.0</td>
-      <td>253</td>
-      <td>200</td>
-      <td>목10</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>B</td>
-      <td>공감과소통</td>
-      <td>임은숙</td>
-      <td>0</td>
-      <td>2</td>
-      <td>21022</td>
-      <td>4.21</td>
-      <td>113.0</td>
-      <td>44</td>
-      <td>40</td>
-      <td>목8</td>
-      <td>목9</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>B</td>
-      <td>관광학의이해</td>
-      <td>박시사</td>
-      <td>0</td>
-      <td>2</td>
-      <td>22021</td>
-      <td>4.15</td>
-      <td>26.0</td>
-      <td>51</td>
-      <td>50</td>
-      <td>목6</td>
-      <td>목7</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>B</td>
-      <td>관광학의이해</td>
-      <td>박운정</td>
-      <td>0</td>
-      <td>2</td>
-      <td>22022</td>
-      <td>4.19</td>
-      <td>16.0</td>
-      <td>46</td>
-      <td>50</td>
       <td>수6</td>
       <td>수7</td>
       <td>NaN</td>
       <td>NaN</td>
     </tr>
     <tr>
-      <td>B</td>
-      <td>영화로보는정치</td>
-      <td>강경희</td>
+      <td>A</td>
+      <td>대중문학과문화</td>
+      <td>권유성</td>
       <td>0</td>
       <td>2</td>
-      <td>23271</td>
-      <td>4.18</td>
-      <td>147.0</td>
-      <td>70</td>
-      <td>70</td>
-      <td>화2</td>
-      <td>화3</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>B</td>
-      <td>교양테니스</td>
-      <td>제갈윤석</td>
-      <td>0</td>
-      <td>2</td>
-      <td>23062</td>
-      <td>4.27</td>
-      <td>55.0</td>
-      <td>33</td>
-      <td>30</td>
-      <td>월6</td>
-      <td>월7</td>
-      <td>월8</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>B</td>
-      <td>제일제주인의삶과정신</td>
-      <td>강경희</td>
-      <td>0</td>
-      <td>2</td>
-      <td>26252</td>
-      <td>4.12</td>
-      <td>91.0</td>
-      <td>56</td>
+      <td>24031</td>
+      <td>4.69</td>
+      <td>108.0</td>
+      <td>76</td>
       <td>60</td>
-      <td>화3</td>
-      <td>화4</td>
+      <td>수8</td>
+      <td>수9</td>
       <td>NaN</td>
       <td>NaN</td>
     </tr>
     <tr>
-      <td>B</td>
-      <td>제주4 . 3의역사적이해</td>
-      <td>양정필</td>
+      <td>A</td>
+      <td>교양탁구</td>
+      <td>서태범</td>
       <td>0</td>
       <td>2</td>
-      <td>23331</td>
-      <td>4.21</td>
-      <td>117.0</td>
+      <td>23052</td>
+      <td>4.69</td>
+      <td>35.0</td>
+      <td>32</td>
+      <td>30</td>
+      <td>수5</td>
+      <td>수6</td>
+      <td>수7</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>A</td>
+      <td>세계시민격</td>
+      <td>최현,이재섭</td>
+      <td>0</td>
+      <td>2</td>
+      <td>25041</td>
+      <td>4.70</td>
+      <td>37.0</td>
       <td>68</td>
       <td>60</td>
-      <td>화8</td>
-      <td>화9</td>
+      <td>수8</td>
+      <td>수9</td>
       <td>NaN</td>
       <td>NaN</td>
     </tr>
     <tr>
-      <td>B</td>
-      <td>교양골프</td>
-      <td>김영표</td>
+      <td>A</td>
+      <td>생활과화학</td>
+      <td>임희정</td>
       <td>0</td>
       <td>2</td>
-      <td>23021</td>
-      <td>4.28</td>
-      <td>18.0</td>
-      <td>31</td>
-      <td>30</td>
+      <td>22181</td>
+      <td>4.72</td>
+      <td>72.0</td>
+      <td>47</td>
+      <td>40</td>
+      <td>화1</td>
       <td>화2</td>
-      <td>화3</td>
-      <td>화4</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>B</td>
-      <td>현대사회의윤리적문제들</td>
-      <td>신은화</td>
-      <td>0</td>
-      <td>2</td>
-      <td>22471</td>
-      <td>4.32</td>
-      <td>34.0</td>
-      <td>60</td>
-      <td>60</td>
-      <td>목8</td>
-      <td>목9</td>
       <td>NaN</td>
       <td>NaN</td>
     </tr>
     <tr>
-      <td>B</td>
-      <td>클래식산책</td>
-      <td>박웅</td>
-      <td>0</td>
-      <td>2</td>
-      <td>92431</td>
-      <td>4.30</td>
-      <td>240.0</td>
-      <td>111</td>
-      <td>120</td>
-      <td>화10</td>
-      <td>화11</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>B</td>
-      <td>기업가정신과혁신</td>
-      <td>양성국</td>
-      <td>1</td>
-      <td>2</td>
-      <td>23101</td>
-      <td>4.31</td>
-      <td>51.0</td>
-      <td>66</td>
-      <td>50</td>
-      <td>월1</td>
-      <td>월2</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>B</td>
-      <td>창의적모순과해결</td>
-      <td>현정석</td>
-      <td>2</td>
-      <td>2</td>
-      <td>24351</td>
-      <td>4.32</td>
-      <td>82.0</td>
-      <td>63</td>
-      <td>60</td>
-      <td>금3</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>B</td>
-      <td>일반화학및실험1</td>
-      <td>김정은</td>
-      <td>0</td>
-      <td>3</td>
-      <td>22353</td>
-      <td>4.35</td>
-      <td>37.0</td>
-      <td>46</td>
-      <td>40</td>
-      <td>월3</td>
-      <td>월4</td>
-      <td>화3</td>
-      <td>화4</td>
-    </tr>
-    <tr>
-      <td>B</td>
-      <td>레저스포츠이해</td>
-      <td>김미예</td>
-      <td>1</td>
-      <td>2</td>
-      <td>22581</td>
-      <td>4.35</td>
-      <td>78.0</td>
-      <td>75</td>
-      <td>60</td>
-      <td>화3</td>
-      <td>화4</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>B</td>
-      <td>교양무용</td>
-      <td>홍예주</td>
-      <td>0</td>
-      <td>2</td>
-      <td>26381</td>
-      <td>4.37</td>
-      <td>19.0</td>
-      <td>29</td>
-      <td>40</td>
-      <td>목7</td>
-      <td>목8</td>
-      <td>목9</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>B</td>
-      <td>영어로배우는재미있는제주신화이야기</td>
-      <td>한진이</td>
-      <td>0</td>
-      <td>2</td>
-      <td>26181</td>
-      <td>4.39</td>
-      <td>54.0</td>
-      <td>33</td>
-      <td>40</td>
-      <td>수1</td>
-      <td>수2</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>B</td>
-      <td>한국사의재조명</td>
-      <td>조형근</td>
-      <td>0</td>
-      <td>2</td>
-      <td>26312</td>
-      <td>4.41</td>
-      <td>32.0</td>
-      <td>42</td>
-      <td>40</td>
-      <td>월8</td>
-      <td>월9</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>B</td>
+      <td>A</td>
       <td>인간과건축</td>
       <td>이용규</td>
       <td>0</td>
@@ -931,82 +643,50 @@
       <td>NaN</td>
     </tr>
     <tr>
-      <td>B</td>
-      <td>제일제주인의삶과정신</td>
-      <td>강경희</td>
+      <td>A</td>
+      <td>기초수학</td>
+      <td>유상욱</td>
       <td>0</td>
       <td>2</td>
-      <td>26251</td>
-      <td>4.12</td>
-      <td>91.0</td>
-      <td>56</td>
+      <td>22051</td>
+      <td>4.58</td>
+      <td>83.0</td>
+      <td>62</td>
       <td>60</td>
-      <td>화6</td>
-      <td>화7</td>
+      <td>월6</td>
+      <td>월7</td>
       <td>NaN</td>
       <td>NaN</td>
     </tr>
     <tr>
-      <td>B</td>
-      <td>노르딕워킹</td>
-      <td>신윤정</td>
+      <td>A</td>
+      <td>도박중독과상담</td>
+      <td>김성봉,윤인노</td>
       <td>0</td>
       <td>2</td>
-      <td>23112</td>
-      <td>4.29</td>
-      <td>41.0</td>
-      <td>32</td>
-      <td>30</td>
+      <td>23121</td>
+      <td>4.57</td>
+      <td>99.0</td>
+      <td>71</td>
+      <td>60</td>
       <td>수1</td>
       <td>수2</td>
-      <td>수3</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>B</td>
-      <td>공감과소통</td>
-      <td>임은숙</td>
-      <td>0</td>
-      <td>2</td>
-      <td>21021</td>
-      <td>4.21</td>
-      <td>113.0</td>
-      <td>46</td>
-      <td>40</td>
-      <td>목6</td>
-      <td>목7</td>
       <td>NaN</td>
       <td>NaN</td>
     </tr>
     <tr>
       <td>B</td>
-      <td>제일제주인의삶과정신</td>
-      <td>강경희</td>
-      <td>0</td>
+      <td>레저스포츠이해</td>
+      <td>김미예</td>
+      <td>1</td>
       <td>2</td>
-      <td>26253</td>
-      <td>4.12</td>
-      <td>91.0</td>
-      <td>57</td>
+      <td>22581</td>
+      <td>4.35</td>
+      <td>78.0</td>
+      <td>75</td>
       <td>60</td>
-      <td>수6</td>
-      <td>수7</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>B</td>
-      <td>문학으로만나는제주</td>
-      <td>김동윤</td>
-      <td>0</td>
-      <td>2</td>
-      <td>21081</td>
-      <td>4.11</td>
-      <td>95.0</td>
-      <td>63</td>
-      <td>60</td>
-      <td>화1</td>
-      <td>화2</td>
+      <td>화3</td>
+      <td>화4</td>
       <td>NaN</td>
       <td>NaN</td>
     </tr>
@@ -1028,14 +708,62 @@
     </tr>
     <tr>
       <td>B</td>
-      <td>문학적상상과글쓰기</td>
-      <td>이보라</td>
+      <td>문학으로만나는제주</td>
+      <td>김동윤</td>
       <td>0</td>
       <td>2</td>
-      <td>23191</td>
-      <td>3.94</td>
-      <td>63.0</td>
-      <td>39</td>
+      <td>21081</td>
+      <td>4.11</td>
+      <td>95.0</td>
+      <td>63</td>
+      <td>60</td>
+      <td>화1</td>
+      <td>화2</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td>심리학개설</td>
+      <td>연준모</td>
+      <td>1</td>
+      <td>2</td>
+      <td>22241</td>
+      <td>4.10</td>
+      <td>40.0</td>
+      <td>71</td>
+      <td>60</td>
+      <td>수6</td>
+      <td>수7</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td>현법의정신</td>
+      <td>신용인</td>
+      <td>0</td>
+      <td>2</td>
+      <td>26331</td>
+      <td>4.09</td>
+      <td>64.0</td>
+      <td>50</td>
+      <td>60</td>
+      <td>화6</td>
+      <td>화7</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td>일본문화의이해</td>
+      <td>소명선,오상은</td>
+      <td>0</td>
+      <td>2</td>
+      <td>25101</td>
+      <td>4.08</td>
+      <td>12.0</td>
+      <td>69</td>
       <td>60</td>
       <td>목3</td>
       <td>목4</td>
@@ -1044,65 +772,49 @@
     </tr>
     <tr>
       <td>B</td>
-      <td>도박중독과상담</td>
-      <td>김성봉,우정애</td>
-      <td>0</td>
-      <td>2</td>
-      <td>23122</td>
-      <td>3.95</td>
-      <td>77.0</td>
-      <td>64</td>
-      <td>60</td>
-      <td>화8</td>
-      <td>화9</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>B</td>
-      <td>융합주제강좌:건강</td>
-      <td>강지영,한나영,노병주</td>
+      <td>자연의이해</td>
+      <td>이상칠,홍승호,강경희</td>
       <td>1</td>
       <td>2</td>
-      <td>24441</td>
-      <td>3.95</td>
-      <td>21.0</td>
-      <td>52</td>
-      <td>60</td>
-      <td>월6</td>
-      <td>월7</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>B</td>
-      <td>공공외교론</td>
-      <td>김진호</td>
-      <td>0</td>
-      <td>2</td>
-      <td>26001</td>
-      <td>3.96</td>
-      <td>260.0</td>
-      <td>96</td>
-      <td>100</td>
-      <td>목2</td>
-      <td>목3</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>B</td>
-      <td>건축공학개론</td>
-      <td>최희복</td>
-      <td>0</td>
-      <td>2</td>
-      <td>22001</td>
-      <td>4.20</td>
-      <td>25.0</td>
-      <td>56</td>
+      <td>21221</td>
+      <td>4.04</td>
+      <td>132.0</td>
+      <td>65</td>
       <td>60</td>
       <td>월3</td>
       <td>월4</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td>일반물리학및실험</td>
+      <td>김용주</td>
+      <td>0</td>
+      <td>3</td>
+      <td>22312</td>
+      <td>4.00</td>
+      <td>15.0</td>
+      <td>38</td>
+      <td>40</td>
+      <td>화6</td>
+      <td>화7</td>
+      <td>목6</td>
+      <td>목7</td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td>제일제주인의삶과정신</td>
+      <td>강경희</td>
+      <td>0</td>
+      <td>2</td>
+      <td>26252</td>
+      <td>4.12</td>
+      <td>91.0</td>
+      <td>56</td>
+      <td>60</td>
+      <td>화3</td>
+      <td>화4</td>
       <td>NaN</td>
       <td>NaN</td>
     </tr>
@@ -1140,14 +852,142 @@
     </tr>
     <tr>
       <td>B</td>
-      <td>심리학개설</td>
-      <td>연준모</td>
+      <td>도박중독과상담</td>
+      <td>김성봉,우정애</td>
+      <td>0</td>
+      <td>2</td>
+      <td>23122</td>
+      <td>3.95</td>
+      <td>77.0</td>
+      <td>64</td>
+      <td>60</td>
+      <td>화8</td>
+      <td>화9</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td>융합주제강좌:건강</td>
+      <td>강지영,한나영,노병주</td>
       <td>1</td>
       <td>2</td>
-      <td>22241</td>
-      <td>4.10</td>
-      <td>40.0</td>
-      <td>71</td>
+      <td>24441</td>
+      <td>3.95</td>
+      <td>21.0</td>
+      <td>52</td>
+      <td>60</td>
+      <td>월6</td>
+      <td>월7</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td>문학적상상과글쓰기</td>
+      <td>이보라</td>
+      <td>0</td>
+      <td>2</td>
+      <td>23191</td>
+      <td>3.94</td>
+      <td>63.0</td>
+      <td>39</td>
+      <td>60</td>
+      <td>목3</td>
+      <td>목4</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td>인생설계와진로</td>
+      <td>양두영,임은숙</td>
+      <td>0</td>
+      <td>2</td>
+      <td>23302</td>
+      <td>3.92</td>
+      <td>53.0</td>
+      <td>40</td>
+      <td>40</td>
+      <td>월8</td>
+      <td>월9</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td>지역과환경개론</td>
+      <td>권상철</td>
+      <td>2</td>
+      <td>2</td>
+      <td>22401</td>
+      <td>3.92</td>
+      <td>288.0</td>
+      <td>192</td>
+      <td>200</td>
+      <td>수10</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td>인물로본동양사</td>
+      <td>정창원</td>
+      <td>0</td>
+      <td>2</td>
+      <td>25081</td>
+      <td>3.92</td>
+      <td>90.0</td>
+      <td>57</td>
+      <td>60</td>
+      <td>수1</td>
+      <td>수2</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td>공공외교론</td>
+      <td>김진호</td>
+      <td>0</td>
+      <td>2</td>
+      <td>26001</td>
+      <td>3.96</td>
+      <td>260.0</td>
+      <td>96</td>
+      <td>100</td>
+      <td>목2</td>
+      <td>목3</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td>제일제주인의삶과정신</td>
+      <td>강경희</td>
+      <td>0</td>
+      <td>2</td>
+      <td>26251</td>
+      <td>4.12</td>
+      <td>91.0</td>
+      <td>56</td>
+      <td>60</td>
+      <td>화6</td>
+      <td>화7</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td>제일제주인의삶과정신</td>
+      <td>강경희</td>
+      <td>0</td>
+      <td>2</td>
+      <td>26253</td>
+      <td>4.12</td>
+      <td>91.0</td>
+      <td>57</td>
       <td>60</td>
       <td>수6</td>
       <td>수7</td>
@@ -1156,14 +996,238 @@
     </tr>
     <tr>
       <td>B</td>
-      <td>자연의이해</td>
-      <td>이상칠,홍승호,강경희</td>
+      <td>관광학의이해</td>
+      <td>박시사</td>
+      <td>0</td>
+      <td>2</td>
+      <td>22021</td>
+      <td>4.15</td>
+      <td>26.0</td>
+      <td>51</td>
+      <td>50</td>
+      <td>목6</td>
+      <td>목7</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td>일반화학및실험1</td>
+      <td>김정은</td>
+      <td>0</td>
+      <td>3</td>
+      <td>22353</td>
+      <td>4.35</td>
+      <td>37.0</td>
+      <td>46</td>
+      <td>40</td>
+      <td>월3</td>
+      <td>월4</td>
+      <td>화3</td>
+      <td>화4</td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td>현대사회의윤리적문제들</td>
+      <td>신은화</td>
+      <td>0</td>
+      <td>2</td>
+      <td>22471</td>
+      <td>4.32</td>
+      <td>34.0</td>
+      <td>60</td>
+      <td>60</td>
+      <td>목8</td>
+      <td>목9</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td>창의적모순과해결</td>
+      <td>현정석</td>
+      <td>2</td>
+      <td>2</td>
+      <td>24351</td>
+      <td>4.32</td>
+      <td>82.0</td>
+      <td>63</td>
+      <td>60</td>
+      <td>금3</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td>기업가정신과혁신</td>
+      <td>양성국</td>
       <td>1</td>
       <td>2</td>
-      <td>21221</td>
-      <td>4.04</td>
-      <td>132.0</td>
-      <td>65</td>
+      <td>23101</td>
+      <td>4.31</td>
+      <td>51.0</td>
+      <td>66</td>
+      <td>50</td>
+      <td>월1</td>
+      <td>월2</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td>클래식산책</td>
+      <td>박웅</td>
+      <td>0</td>
+      <td>2</td>
+      <td>92431</td>
+      <td>4.30</td>
+      <td>240.0</td>
+      <td>111</td>
+      <td>120</td>
+      <td>화10</td>
+      <td>화11</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td>노르딕워킹</td>
+      <td>신윤정</td>
+      <td>0</td>
+      <td>2</td>
+      <td>23112</td>
+      <td>4.29</td>
+      <td>41.0</td>
+      <td>32</td>
+      <td>30</td>
+      <td>수1</td>
+      <td>수2</td>
+      <td>수3</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td>교양골프</td>
+      <td>김영표</td>
+      <td>0</td>
+      <td>2</td>
+      <td>23021</td>
+      <td>4.28</td>
+      <td>18.0</td>
+      <td>31</td>
+      <td>30</td>
+      <td>화2</td>
+      <td>화3</td>
+      <td>화4</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td>교양테니스</td>
+      <td>제갈윤석</td>
+      <td>0</td>
+      <td>2</td>
+      <td>23062</td>
+      <td>4.27</td>
+      <td>55.0</td>
+      <td>33</td>
+      <td>30</td>
+      <td>월6</td>
+      <td>월7</td>
+      <td>월8</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td>교양테니스</td>
+      <td>제갈윤석</td>
+      <td>0</td>
+      <td>2</td>
+      <td>23061</td>
+      <td>4.27</td>
+      <td>55.0</td>
+      <td>33</td>
+      <td>30</td>
+      <td>월6</td>
+      <td>월7</td>
+      <td>월8</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td>공감과소통</td>
+      <td>임은숙</td>
+      <td>0</td>
+      <td>2</td>
+      <td>21021</td>
+      <td>4.21</td>
+      <td>113.0</td>
+      <td>46</td>
+      <td>40</td>
+      <td>목6</td>
+      <td>목7</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td>공감과소통</td>
+      <td>임은숙</td>
+      <td>0</td>
+      <td>2</td>
+      <td>21022</td>
+      <td>4.21</td>
+      <td>113.0</td>
+      <td>44</td>
+      <td>40</td>
+      <td>목8</td>
+      <td>목9</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td>예비부모교육</td>
+      <td>박정환</td>
+      <td>2</td>
+      <td>2</td>
+      <td>26411</td>
+      <td>4.21</td>
+      <td>67.0</td>
+      <td>253</td>
+      <td>200</td>
+      <td>목10</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td>제주4 . 3의역사적이해</td>
+      <td>양정필</td>
+      <td>0</td>
+      <td>2</td>
+      <td>23331</td>
+      <td>4.21</td>
+      <td>117.0</td>
+      <td>68</td>
+      <td>60</td>
+      <td>화8</td>
+      <td>화9</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td>건축공학개론</td>
+      <td>최희복</td>
+      <td>0</td>
+      <td>2</td>
+      <td>22001</td>
+      <td>4.20</td>
+      <td>25.0</td>
+      <td>56</td>
       <td>60</td>
       <td>월3</td>
       <td>월4</td>
@@ -1172,81 +1236,113 @@
     </tr>
     <tr>
       <td>B</td>
-      <td>현법의정신</td>
-      <td>신용인</td>
+      <td>창업과경영</td>
+      <td>박설우,배창봉</td>
       <td>0</td>
       <td>2</td>
-      <td>26331</td>
-      <td>4.09</td>
-      <td>64.0</td>
-      <td>50</td>
+      <td>24341</td>
+      <td>4.19</td>
+      <td>21.0</td>
+      <td>59</td>
       <td>60</td>
-      <td>화6</td>
-      <td>화7</td>
+      <td>수3</td>
+      <td>수4</td>
       <td>NaN</td>
       <td>NaN</td>
     </tr>
     <tr>
-      <td>C</td>
-      <td>기후변화개론</td>
-      <td>최광용</td>
+      <td>B</td>
+      <td>관광학의이해</td>
+      <td>박운정</td>
+      <td>0</td>
       <td>2</td>
-      <td>2</td>
-      <td>22551</td>
-      <td>3.24</td>
-      <td>119.0</td>
-      <td>132</td>
-      <td>150</td>
-      <td>월10</td>
-      <td>NaN</td>
+      <td>22022</td>
+      <td>4.19</td>
+      <td>16.0</td>
+      <td>46</td>
+      <td>50</td>
+      <td>수6</td>
+      <td>수7</td>
       <td>NaN</td>
       <td>NaN</td>
     </tr>
     <tr>
-      <td>C</td>
-      <td>국제개발협력의이해</td>
-      <td>권상철</td>
-      <td>1</td>
+      <td>B</td>
+      <td>영화로보는정치</td>
+      <td>강경희</td>
+      <td>0</td>
       <td>2</td>
-      <td>23081</td>
-      <td>3.69</td>
-      <td>156.0</td>
-      <td>72</td>
-      <td>80</td>
+      <td>23271</td>
+      <td>4.18</td>
+      <td>147.0</td>
+      <td>70</td>
+      <td>70</td>
+      <td>화2</td>
+      <td>화3</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td>영어로배우는재미있는제주신화이야기</td>
+      <td>한진이</td>
+      <td>0</td>
+      <td>2</td>
+      <td>26181</td>
+      <td>4.39</td>
+      <td>54.0</td>
+      <td>33</td>
+      <td>40</td>
+      <td>수1</td>
+      <td>수2</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td>한국사의재조명</td>
+      <td>조형근</td>
+      <td>0</td>
+      <td>2</td>
+      <td>26312</td>
+      <td>4.41</td>
+      <td>32.0</td>
+      <td>42</td>
+      <td>40</td>
       <td>월8</td>
       <td>월9</td>
       <td>NaN</td>
       <td>NaN</td>
     </tr>
     <tr>
-      <td>C</td>
-      <td>정보통신과컴퓨터개론</td>
-      <td>김남식</td>
+      <td>B</td>
+      <td>교양무용</td>
+      <td>홍예주</td>
       <td>0</td>
       <td>2</td>
-      <td>24295</td>
-      <td>3.66</td>
-      <td>180.0</td>
-      <td>36</td>
+      <td>26381</td>
+      <td>4.37</td>
+      <td>19.0</td>
+      <td>29</td>
       <td>40</td>
-      <td>목3</td>
-      <td>목4</td>
-      <td>NaN</td>
+      <td>목7</td>
+      <td>목8</td>
+      <td>목9</td>
       <td>NaN</td>
     </tr>
     <tr>
       <td>C</td>
-      <td>프랑스문화이해</td>
-      <td>고영림</td>
-      <td>0</td>
-      <td>2</td>
-      <td>25181</td>
-      <td>3.66</td>
-      <td>144.0</td>
-      <td>66</td>
+      <td>회계학의기초</td>
+      <td>정순여</td>
+      <td>1</td>
+      <td>3</td>
+      <td>22542</td>
+      <td>3.88</td>
+      <td>33.0</td>
+      <td>61</td>
       <td>60</td>
-      <td>수3</td>
-      <td>수4</td>
+      <td>수5</td>
+      <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
     </tr>
@@ -1263,22 +1359,6 @@
       <td>40</td>
       <td>수8</td>
       <td>수9</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>C</td>
-      <td>전쟁과평화</td>
-      <td>김진호</td>
-      <td>2</td>
-      <td>2</td>
-      <td>25121</td>
-      <td>3.61</td>
-      <td>355.0</td>
-      <td>88</td>
-      <td>80</td>
-      <td>금6</td>
-      <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
     </tr>
@@ -1316,17 +1396,33 @@
     </tr>
     <tr>
       <td>C</td>
-      <td>유럽문학산책</td>
-      <td>신종락</td>
+      <td>한국사의재조명</td>
+      <td>NaN</td>
       <td>0</td>
       <td>2</td>
-      <td>22261</td>
-      <td>3.51</td>
-      <td>41.0</td>
-      <td>53</td>
+      <td>92631</td>
+      <td>3.91</td>
+      <td>22.0</td>
+      <td>55</td>
       <td>60</td>
-      <td>수6</td>
-      <td>수7</td>
+      <td>월10</td>
+      <td>월11</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>중국영화로현대중국이해하기</td>
+      <td>조홍선</td>
+      <td>0</td>
+      <td>2</td>
+      <td>22371</td>
+      <td>3.51</td>
+      <td>142.0</td>
+      <td>57</td>
+      <td>60</td>
+      <td>화6</td>
+      <td>화7</td>
       <td>NaN</td>
       <td>NaN</td>
     </tr>
@@ -1396,6 +1492,38 @@
     </tr>
     <tr>
       <td>C</td>
+      <td>정보통신과컴퓨터개론</td>
+      <td>김진숙</td>
+      <td>0</td>
+      <td>2</td>
+      <td>24296</td>
+      <td>3.36</td>
+      <td>11.0</td>
+      <td>39</td>
+      <td>40</td>
+      <td>목6</td>
+      <td>목7</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>정보통신과컴퓨터개론</td>
+      <td>김진숙</td>
+      <td>0</td>
+      <td>2</td>
+      <td>24291</td>
+      <td>3.36</td>
+      <td>11.0</td>
+      <td>42</td>
+      <td>40</td>
+      <td>월6</td>
+      <td>월7</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>C</td>
       <td>디자인씽킹과ICT</td>
       <td>오철훈</td>
       <td>0</td>
@@ -1412,15 +1540,47 @@
     </tr>
     <tr>
       <td>C</td>
-      <td>한국문학인문</td>
-      <td>장인수</td>
+      <td>기후변화개론</td>
+      <td>최광용</td>
+      <td>2</td>
+      <td>2</td>
+      <td>22551</td>
+      <td>3.24</td>
+      <td>119.0</td>
+      <td>132</td>
+      <td>150</td>
+      <td>월10</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>체육의이해</td>
+      <td>제갈윤석</td>
       <td>0</td>
       <td>2</td>
-      <td>21241</td>
-      <td>3.72</td>
+      <td>22432</td>
+      <td>3.12</td>
       <td>43.0</td>
-      <td>29</td>
+      <td>26</td>
       <td>30</td>
+      <td>목3</td>
+      <td>목4</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>제주의역사와문화</td>
+      <td>김동진</td>
+      <td>0</td>
+      <td>2</td>
+      <td>26271</td>
+      <td>3.09</td>
+      <td>23.0</td>
+      <td>55</td>
+      <td>60</td>
       <td>화6</td>
       <td>화7</td>
       <td>NaN</td>
@@ -1428,14 +1588,270 @@
     </tr>
     <tr>
       <td>C</td>
-      <td>중국영화로현대중국이해하기</td>
-      <td>조홍선</td>
+      <td>일반생물학및실험</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>3</td>
+      <td>22313</td>
+      <td>3.08</td>
+      <td>13.0</td>
+      <td>1</td>
+      <td>40</td>
+      <td>화6</td>
+      <td>화7</td>
+      <td>수8</td>
+      <td>수9</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>인생설계와진로</td>
+      <td>양두영,임은숙</td>
       <td>0</td>
       <td>2</td>
-      <td>22371</td>
+      <td>23301</td>
+      <td>3.92</td>
+      <td>53.0</td>
+      <td>42</td>
+      <td>40</td>
+      <td>월6</td>
+      <td>월7</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>전쟁과평화</td>
+      <td>김진호</td>
+      <td>2</td>
+      <td>2</td>
+      <td>25121</td>
+      <td>3.61</td>
+      <td>355.0</td>
+      <td>88</td>
+      <td>80</td>
+      <td>금6</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>일반화학및실험1</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>3</td>
+      <td>22352</td>
+      <td>3.64</td>
+      <td>11.0</td>
+      <td>43</td>
+      <td>40</td>
+      <td>수3</td>
+      <td>수4</td>
+      <td>목3</td>
+      <td>목4</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>유럽문학산책</td>
+      <td>신종락</td>
+      <td>0</td>
+      <td>2</td>
+      <td>22261</td>
       <td>3.51</td>
-      <td>142.0</td>
-      <td>57</td>
+      <td>41.0</td>
+      <td>53</td>
+      <td>60</td>
+      <td>수6</td>
+      <td>수7</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>정보통신과컴퓨터개론</td>
+      <td>김남식</td>
+      <td>0</td>
+      <td>2</td>
+      <td>24295</td>
+      <td>3.66</td>
+      <td>180.0</td>
+      <td>36</td>
+      <td>40</td>
+      <td>목3</td>
+      <td>목4</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>자본주의와기업법</td>
+      <td>오성근</td>
+      <td>0</td>
+      <td>2</td>
+      <td>23321</td>
+      <td>3.88</td>
+      <td>250.0</td>
+      <td>182</td>
+      <td>200</td>
+      <td>화8</td>
+      <td>화9</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>행복한삶을위한철학</td>
+      <td>윤용택</td>
+      <td>0</td>
+      <td>2</td>
+      <td>23361</td>
+      <td>3.86</td>
+      <td>188.0</td>
+      <td>73</td>
+      <td>60</td>
+      <td>화3</td>
+      <td>화4</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>일반화학및실험1</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>3</td>
+      <td>22351</td>
+      <td>3.64</td>
+      <td>11.0</td>
+      <td>37</td>
+      <td>40</td>
+      <td>월1</td>
+      <td>월2</td>
+      <td>화8</td>
+      <td>화9</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>미디어의이해</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>2</td>
+      <td>21102</td>
+      <td>3.85</td>
+      <td>27.0</td>
+      <td>66</td>
+      <td>60</td>
+      <td>수6</td>
+      <td>수7</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>문화기호학</td>
+      <td>박여성</td>
+      <td>0</td>
+      <td>2</td>
+      <td>22111</td>
+      <td>3.83</td>
+      <td>71.0</td>
+      <td>60</td>
+      <td>60</td>
+      <td>화1</td>
+      <td>화2</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>일반생물학및실험</td>
+      <td>송우람</td>
+      <td>0</td>
+      <td>3</td>
+      <td>22324</td>
+      <td>3.81</td>
+      <td>52.0</td>
+      <td>26</td>
+      <td>40</td>
+      <td>수6</td>
+      <td>수7</td>
+      <td>목1</td>
+      <td>목2</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>현대행정학입문</td>
+      <td>진영찬</td>
+      <td>0</td>
+      <td>2</td>
+      <td>92241</td>
+      <td>3.81</td>
+      <td>37.0</td>
+      <td>34</td>
+      <td>60</td>
+      <td>수10</td>
+      <td>수11</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>교양배드민턴</td>
+      <td>박성환</td>
+      <td>0</td>
+      <td>2</td>
+      <td>23031</td>
+      <td>3.79</td>
+      <td>29.0</td>
+      <td>39</td>
+      <td>30</td>
+      <td>목5</td>
+      <td>목6</td>
+      <td>목7</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>국제무역의이해</td>
+      <td>박진우</td>
+      <td>1</td>
+      <td>2</td>
+      <td>25001</td>
+      <td>3.78</td>
+      <td>45.0</td>
+      <td>79</td>
+      <td>60</td>
+      <td>목8</td>
+      <td>목9</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>일반생물학및실험</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>3</td>
+      <td>22323</td>
+      <td>3.86</td>
+      <td>14.0</td>
+      <td>43</td>
+      <td>40</td>
+      <td>월6</td>
+      <td>월7</td>
+      <td>화3</td>
+      <td>화4</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>영어구문의기초</td>
+      <td>윤홍옥</td>
+      <td>0</td>
+      <td>2</td>
+      <td>21171</td>
+      <td>3.77</td>
+      <td>64.0</td>
+      <td>62</td>
       <td>60</td>
       <td>화6</td>
       <td>화7</td>
@@ -1476,161 +1892,33 @@
     </tr>
     <tr>
       <td>C</td>
-      <td>지역과환경개론</td>
+      <td>프랑스문화이해</td>
+      <td>고영림</td>
+      <td>0</td>
+      <td>2</td>
+      <td>25181</td>
+      <td>3.66</td>
+      <td>144.0</td>
+      <td>66</td>
+      <td>60</td>
+      <td>수3</td>
+      <td>수4</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>국제개발협력의이해</td>
       <td>권상철</td>
-      <td>2</td>
-      <td>2</td>
-      <td>22401</td>
-      <td>3.92</td>
-      <td>288.0</td>
-      <td>192</td>
-      <td>200</td>
-      <td>수10</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>C</td>
-      <td>인물로본동양사</td>
-      <td>정창원</td>
-      <td>0</td>
-      <td>2</td>
-      <td>25081</td>
-      <td>3.92</td>
-      <td>90.0</td>
-      <td>57</td>
-      <td>60</td>
-      <td>수1</td>
-      <td>수2</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>C</td>
-      <td>생활과원예</td>
-      <td>강훈</td>
-      <td>0</td>
-      <td>2</td>
-      <td>24171</td>
-      <td>3.77</td>
-      <td>60.0</td>
-      <td>55</td>
-      <td>60</td>
-      <td>목8</td>
-      <td>목9</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>C</td>
-      <td>인생설계와진로</td>
-      <td>양두영,임은숙</td>
-      <td>0</td>
-      <td>2</td>
-      <td>23301</td>
-      <td>3.92</td>
-      <td>53.0</td>
-      <td>42</td>
-      <td>40</td>
-      <td>월6</td>
-      <td>월7</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>C</td>
-      <td>한국사의재조명</td>
-      <td>NaN</td>
-      <td>0</td>
-      <td>2</td>
-      <td>92631</td>
-      <td>3.91</td>
-      <td>22.0</td>
-      <td>55</td>
-      <td>60</td>
-      <td>월10</td>
-      <td>월11</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>C</td>
-      <td>자본주의와기업법</td>
-      <td>오성근</td>
-      <td>0</td>
-      <td>2</td>
-      <td>23321</td>
-      <td>3.88</td>
-      <td>250.0</td>
-      <td>182</td>
-      <td>200</td>
-      <td>화8</td>
-      <td>화9</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>C</td>
-      <td>국어어문규범의기초</td>
-      <td>송현정</td>
       <td>1</td>
       <td>2</td>
-      <td>21041</td>
-      <td>3.88</td>
-      <td>68.0</td>
-      <td>64</td>
-      <td>60</td>
-      <td>화1</td>
-      <td>화2</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>C</td>
-      <td>회계학의기초</td>
-      <td>정순여</td>
-      <td>1</td>
-      <td>3</td>
-      <td>22542</td>
-      <td>3.88</td>
-      <td>33.0</td>
-      <td>61</td>
-      <td>60</td>
-      <td>수5</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>C</td>
-      <td>인생설계와진로</td>
-      <td>양두영,임은숙</td>
-      <td>0</td>
-      <td>2</td>
-      <td>23302</td>
-      <td>3.92</td>
-      <td>53.0</td>
-      <td>40</td>
-      <td>40</td>
+      <td>23081</td>
+      <td>3.69</td>
+      <td>156.0</td>
+      <td>72</td>
+      <td>80</td>
       <td>월8</td>
       <td>월9</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>C</td>
-      <td>행복한삶을위한철학</td>
-      <td>윤용택</td>
-      <td>0</td>
-      <td>2</td>
-      <td>23361</td>
-      <td>3.86</td>
-      <td>188.0</td>
-      <td>73</td>
-      <td>60</td>
-      <td>화3</td>
-      <td>화4</td>
       <td>NaN</td>
       <td>NaN</td>
     </tr>
@@ -1652,54 +1940,6 @@
     </tr>
     <tr>
       <td>C</td>
-      <td>영어구문의기초</td>
-      <td>윤홍옥</td>
-      <td>0</td>
-      <td>2</td>
-      <td>21171</td>
-      <td>3.77</td>
-      <td>64.0</td>
-      <td>62</td>
-      <td>60</td>
-      <td>화6</td>
-      <td>화7</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>C</td>
-      <td>국제무역의이해</td>
-      <td>박진우</td>
-      <td>1</td>
-      <td>2</td>
-      <td>25001</td>
-      <td>3.78</td>
-      <td>45.0</td>
-      <td>79</td>
-      <td>60</td>
-      <td>목8</td>
-      <td>목9</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>C</td>
-      <td>교양배드민턴</td>
-      <td>박성환</td>
-      <td>0</td>
-      <td>2</td>
-      <td>23031</td>
-      <td>3.79</td>
-      <td>29.0</td>
-      <td>39</td>
-      <td>30</td>
-      <td>목5</td>
-      <td>목6</td>
-      <td>목7</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>C</td>
       <td>기후위기와사회</td>
       <td>서영표,김태연</td>
       <td>0</td>
@@ -1716,30 +1956,30 @@
     </tr>
     <tr>
       <td>C</td>
-      <td>현대행정학입문</td>
-      <td>진영찬</td>
+      <td>생활과원예</td>
+      <td>강훈</td>
       <td>0</td>
       <td>2</td>
-      <td>92241</td>
-      <td>3.81</td>
-      <td>37.0</td>
-      <td>34</td>
+      <td>24171</td>
+      <td>3.77</td>
+      <td>60.0</td>
+      <td>55</td>
       <td>60</td>
-      <td>수10</td>
-      <td>수11</td>
+      <td>목8</td>
+      <td>목9</td>
       <td>NaN</td>
       <td>NaN</td>
     </tr>
     <tr>
       <td>C</td>
-      <td>문화기호학</td>
-      <td>박여성</td>
-      <td>0</td>
+      <td>국어어문규범의기초</td>
+      <td>송현정</td>
+      <td>1</td>
       <td>2</td>
-      <td>22111</td>
-      <td>3.83</td>
-      <td>71.0</td>
-      <td>60</td>
+      <td>21041</td>
+      <td>3.88</td>
+      <td>68.0</td>
+      <td>64</td>
       <td>60</td>
       <td>화1</td>
       <td>화2</td>
@@ -1748,66 +1988,50 @@
     </tr>
     <tr>
       <td>C</td>
-      <td>미디어의이해</td>
-      <td>NaN</td>
+      <td>한국문학인문</td>
+      <td>장인수</td>
       <td>0</td>
       <td>2</td>
-      <td>21102</td>
-      <td>3.85</td>
-      <td>27.0</td>
-      <td>66</td>
-      <td>60</td>
-      <td>수6</td>
-      <td>수7</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>C</td>
-      <td>일반생물학및실험</td>
-      <td>송우람</td>
-      <td>0</td>
-      <td>3</td>
-      <td>22324</td>
-      <td>3.81</td>
-      <td>52.0</td>
-      <td>26</td>
-      <td>40</td>
-      <td>수6</td>
-      <td>수7</td>
-      <td>목1</td>
-      <td>목2</td>
-    </tr>
-    <tr>
-      <td>D</td>
-      <td>체육의이해</td>
-      <td>제갈윤석</td>
-      <td>0</td>
-      <td>2</td>
-      <td>22432</td>
-      <td>3.12</td>
+      <td>21241</td>
+      <td>3.72</td>
       <td>43.0</td>
-      <td>26</td>
+      <td>29</td>
       <td>30</td>
-      <td>목3</td>
-      <td>목4</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>D</td>
-      <td>제주의역사와문화</td>
-      <td>김동진</td>
-      <td>0</td>
-      <td>2</td>
-      <td>26271</td>
-      <td>3.09</td>
-      <td>23.0</td>
-      <td>55</td>
-      <td>60</td>
       <td>화6</td>
       <td>화7</td>
       <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>D</td>
+      <td>일반물리학및실험</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>3</td>
+      <td>22311</td>
+      <td>3.08</td>
+      <td>13.0</td>
+      <td>25</td>
+      <td>40</td>
+      <td>화8</td>
+      <td>화9</td>
+      <td>수3</td>
+      <td>수4</td>
+    </tr>
+    <tr>
+      <td>D</td>
+      <td>회계학의기초</td>
+      <td>김동욱</td>
+      <td>0</td>
+      <td>3</td>
+      <td>22541</td>
+      <td>3.04</td>
+      <td>25.0</td>
+      <td>47</td>
+      <td>60</td>
+      <td>화6</td>
+      <td>화7</td>
+      <td>화8</td>
       <td>NaN</td>
     </tr>
     <tr>
@@ -1892,6 +2116,22 @@
     </tr>
     <tr>
       <td>D</td>
+      <td>통계학및실습</td>
+      <td>오산수민</td>
+      <td>0</td>
+      <td>3</td>
+      <td>22452</td>
+      <td>2.75</td>
+      <td>12.0</td>
+      <td>32</td>
+      <td>40</td>
+      <td>화8</td>
+      <td>화9</td>
+      <td>목8</td>
+      <td>목9</td>
+    </tr>
+    <tr>
+      <td>D</td>
       <td>성과학</td>
       <td>우호춘</td>
       <td>0</td>
@@ -1928,30 +2168,30 @@
       <td>김숙이</td>
       <td>0</td>
       <td>2</td>
-      <td>26212</td>
+      <td>26211</td>
       <td>2.38</td>
       <td>21.0</td>
-      <td>34</td>
+      <td>36</td>
       <td>60</td>
-      <td>수6</td>
-      <td>수7</td>
+      <td>수3</td>
+      <td>수4</td>
       <td>NaN</td>
       <td>NaN</td>
     </tr>
     <tr>
       <td>D</td>
-      <td>회계학의기초</td>
-      <td>김동욱</td>
+      <td>원예과학개론</td>
+      <td>송관정,한상헌,조영열,박수국,오욱</td>
       <td>0</td>
-      <td>3</td>
-      <td>22541</td>
-      <td>3.04</td>
-      <td>25.0</td>
-      <td>47</td>
-      <td>60</td>
-      <td>화6</td>
-      <td>화7</td>
-      <td>화8</td>
+      <td>2</td>
+      <td>22251</td>
+      <td>3.00</td>
+      <td>14.0</td>
+      <td>33</td>
+      <td>40</td>
+      <td>수8</td>
+      <td>수9</td>
+      <td>NaN</td>
       <td>NaN</td>
     </tr>
     <tr>
@@ -1976,13 +2216,45 @@
       <td>김숙이</td>
       <td>0</td>
       <td>2</td>
-      <td>26211</td>
+      <td>26212</td>
       <td>2.38</td>
       <td>21.0</td>
-      <td>36</td>
+      <td>34</td>
       <td>60</td>
-      <td>수3</td>
-      <td>수4</td>
+      <td>수6</td>
+      <td>수7</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>미술감상</td>
+      <td>강지은</td>
+      <td>0</td>
+      <td>2</td>
+      <td>23201</td>
+      <td>5.00</td>
+      <td>1.0</td>
+      <td>62</td>
+      <td>60</td>
+      <td>수8</td>
+      <td>수9</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>기업가정신과혁신</td>
+      <td>김문규</td>
+      <td>0</td>
+      <td>2</td>
+      <td>23102</td>
+      <td>4.50</td>
+      <td>2.0</td>
+      <td>63</td>
+      <td>60</td>
+      <td>월8</td>
+      <td>월9</td>
       <td>NaN</td>
       <td>NaN</td>
     </tr>
@@ -2053,22 +2325,6 @@
     <tr>
       <td>F</td>
       <td>통계학및실습</td>
-      <td>오산수민</td>
-      <td>0</td>
-      <td>3</td>
-      <td>22452</td>
-      <td>2.75</td>
-      <td>12.0</td>
-      <td>32</td>
-      <td>40</td>
-      <td>화8</td>
-      <td>화9</td>
-      <td>목8</td>
-      <td>목9</td>
-    </tr>
-    <tr>
-      <td>F</td>
-      <td>통계학및실습</td>
       <td>오승희</td>
       <td>0</td>
       <td>3</td>
@@ -2081,22 +2337,6 @@
       <td>월7</td>
       <td>수8</td>
       <td>수9</td>
-    </tr>
-    <tr>
-      <td>F</td>
-      <td>철학의이해</td>
-      <td>이서규,김태현</td>
-      <td>0</td>
-      <td>2</td>
-      <td>22411</td>
-      <td>4.58</td>
-      <td>12.0</td>
-      <td>58</td>
-      <td>60</td>
-      <td>화1</td>
-      <td>화2</td>
-      <td>NaN</td>
-      <td>NaN</td>
     </tr>
     <tr>
       <td>F</td>
@@ -2148,38 +2388,6 @@
     </tr>
     <tr>
       <td>F</td>
-      <td>일반화학및실험1</td>
-      <td>NaN</td>
-      <td>0</td>
-      <td>3</td>
-      <td>22352</td>
-      <td>3.64</td>
-      <td>11.0</td>
-      <td>43</td>
-      <td>40</td>
-      <td>수3</td>
-      <td>수4</td>
-      <td>목3</td>
-      <td>목4</td>
-    </tr>
-    <tr>
-      <td>F</td>
-      <td>일반화학및실험1</td>
-      <td>NaN</td>
-      <td>0</td>
-      <td>3</td>
-      <td>22351</td>
-      <td>3.64</td>
-      <td>11.0</td>
-      <td>37</td>
-      <td>40</td>
-      <td>월1</td>
-      <td>월2</td>
-      <td>화8</td>
-      <td>화9</td>
-    </tr>
-    <tr>
-      <td>F</td>
       <td>일반생물학및실험2</td>
       <td>박수제</td>
       <td>0</td>
@@ -2196,83 +2404,35 @@
     </tr>
     <tr>
       <td>F</td>
-      <td>일반생물학및실험2</td>
-      <td>최수연</td>
-      <td>0</td>
-      <td>3</td>
-      <td>22342</td>
-      <td>4.67</td>
-      <td>3.0</td>
-      <td>33</td>
-      <td>50</td>
-      <td>월8</td>
-      <td>월9</td>
-      <td>목3</td>
-      <td>목4</td>
-    </tr>
-    <tr>
-      <td>F</td>
-      <td>기업가정신과혁신</td>
-      <td>김문규</td>
+      <td>발명과특허</td>
+      <td>김인중,장명훈,김종완</td>
       <td>0</td>
       <td>2</td>
-      <td>23102</td>
-      <td>4.50</td>
-      <td>2.0</td>
-      <td>63</td>
-      <td>60</td>
-      <td>월8</td>
-      <td>월9</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>F</td>
-      <td>일반생물학및실험</td>
-      <td>NaN</td>
-      <td>0</td>
-      <td>3</td>
-      <td>22313</td>
-      <td>3.08</td>
-      <td>13.0</td>
-      <td>1</td>
-      <td>40</td>
-      <td>화6</td>
-      <td>화7</td>
+      <td>72411</td>
+      <td>3.33</td>
+      <td>3.0</td>
+      <td>75</td>
+      <td>150</td>
       <td>수8</td>
       <td>수9</td>
-    </tr>
-    <tr>
-      <td>F</td>
-      <td>일반물리학및실험</td>
-      <td>김용주</td>
-      <td>0</td>
-      <td>3</td>
-      <td>22312</td>
-      <td>4.00</td>
-      <td>15.0</td>
-      <td>38</td>
-      <td>40</td>
-      <td>화6</td>
-      <td>화7</td>
-      <td>목6</td>
-      <td>목7</td>
-    </tr>
-    <tr>
-      <td>F</td>
-      <td>일반물리학및실험</td>
       <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>일반생물학및실험2</td>
+      <td>이관욱</td>
       <td>0</td>
       <td>3</td>
-      <td>22311</td>
-      <td>3.08</td>
-      <td>13.0</td>
-      <td>25</td>
-      <td>40</td>
-      <td>화8</td>
-      <td>화9</td>
-      <td>수3</td>
-      <td>수4</td>
+      <td>22341</td>
+      <td>4.67</td>
+      <td>3.0</td>
+      <td>38</td>
+      <td>50</td>
+      <td>월3</td>
+      <td>월4</td>
+      <td>수6</td>
+      <td>수7</td>
     </tr>
     <tr>
       <td>F</td>
@@ -2287,22 +2447,6 @@
       <td>60</td>
       <td>수6</td>
       <td>수7</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>F</td>
-      <td>원예과학개론</td>
-      <td>송관정,한상헌,조영열,박수국,오욱</td>
-      <td>0</td>
-      <td>2</td>
-      <td>22251</td>
-      <td>3.00</td>
-      <td>14.0</td>
-      <td>33</td>
-      <td>40</td>
-      <td>수8</td>
-      <td>수9</td>
       <td>NaN</td>
       <td>NaN</td>
     </tr>
@@ -2404,22 +2548,6 @@
     </tr>
     <tr>
       <td>F</td>
-      <td>미디어리터러시</td>
-      <td>최낙진,이서현</td>
-      <td>0</td>
-      <td>2</td>
-      <td>21312</td>
-      <td>4.50</td>
-      <td>14.0</td>
-      <td>62</td>
-      <td>60</td>
-      <td>목6</td>
-      <td>목7</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>F</td>
       <td>인간행동의이해</td>
       <td>최보영</td>
       <td>1</td>
@@ -2468,51 +2596,35 @@
     </tr>
     <tr>
       <td>F</td>
-      <td>일반생물학및실험</td>
-      <td>NaN</td>
+      <td>생명공학개론</td>
+      <td>한송이,고영진</td>
       <td>0</td>
-      <td>3</td>
-      <td>22323</td>
-      <td>3.86</td>
-      <td>14.0</td>
-      <td>43</td>
-      <td>40</td>
-      <td>월6</td>
-      <td>월7</td>
-      <td>화3</td>
-      <td>화4</td>
+      <td>2</td>
+      <td>23221</td>
+      <td>5.00</td>
+      <td>1.0</td>
+      <td>54</td>
+      <td>60</td>
+      <td>목8</td>
+      <td>목9</td>
+      <td>NaN</td>
+      <td>NaN</td>
     </tr>
     <tr>
       <td>F</td>
       <td>일반생물학및실험2</td>
-      <td>이관욱</td>
+      <td>최수연</td>
       <td>0</td>
       <td>3</td>
-      <td>22341</td>
+      <td>22342</td>
       <td>4.67</td>
       <td>3.0</td>
-      <td>38</td>
+      <td>33</td>
       <td>50</td>
-      <td>월3</td>
-      <td>월4</td>
-      <td>수6</td>
-      <td>수7</td>
-    </tr>
-    <tr>
-      <td>F</td>
-      <td>미술감상</td>
-      <td>강지은</td>
-      <td>0</td>
-      <td>2</td>
-      <td>23201</td>
-      <td>5.00</td>
-      <td>1.0</td>
-      <td>62</td>
-      <td>60</td>
-      <td>수8</td>
-      <td>수9</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>월8</td>
+      <td>월9</td>
+      <td>목3</td>
+      <td>목4</td>
     </tr>
     <tr>
       <td>F</td>
@@ -2532,49 +2644,17 @@
     </tr>
     <tr>
       <td>F</td>
-      <td>발명과특허</td>
-      <td>김인중,장명훈,김종완</td>
+      <td>생활속의발명</td>
+      <td>라상원</td>
       <td>0</td>
       <td>2</td>
-      <td>72411</td>
-      <td>3.33</td>
-      <td>3.0</td>
-      <td>75</td>
-      <td>150</td>
-      <td>수8</td>
-      <td>수9</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>F</td>
-      <td>공학윤리</td>
-      <td>이용길</td>
-      <td>0</td>
-      <td>2</td>
-      <td>72402</td>
-      <td>4.58</td>
-      <td>12.0</td>
-      <td>28</td>
-      <td>30</td>
-      <td>금5</td>
-      <td>금6</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>F</td>
-      <td>공학윤리</td>
-      <td>이용길</td>
-      <td>0</td>
-      <td>2</td>
-      <td>72401</td>
-      <td>4.58</td>
-      <td>12.0</td>
-      <td>34</td>
-      <td>30</td>
-      <td>금3</td>
-      <td>금4</td>
+      <td>24401</td>
+      <td>4.30</td>
+      <td>10.0</td>
+      <td>61</td>
+      <td>60</td>
+      <td>화6</td>
+      <td>화7</td>
       <td>NaN</td>
       <td>NaN</td>
     </tr>
@@ -2740,6 +2820,22 @@
     </tr>
     <tr>
       <td>F</td>
+      <td>생명공학과ICT</td>
+      <td>이효연 외 7인</td>
+      <td>0</td>
+      <td>2</td>
+      <td>24141</td>
+      <td>4.50</td>
+      <td>2.0</td>
+      <td>47</td>
+      <td>60</td>
+      <td>목6</td>
+      <td>목7</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>F</td>
       <td>국악실기의기초</td>
       <td>홍주희</td>
       <td>0</td>
@@ -2756,33 +2852,17 @@
     </tr>
     <tr>
       <td>F</td>
-      <td>생명공학개론</td>
-      <td>한송이,고영진</td>
+      <td>아동문학의이해</td>
+      <td>이근영</td>
       <td>0</td>
       <td>2</td>
-      <td>23221</td>
-      <td>5.00</td>
+      <td>62132</td>
+      <td>1.00</td>
       <td>1.0</td>
-      <td>54</td>
-      <td>60</td>
-      <td>목8</td>
-      <td>목9</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>F</td>
-      <td>현대사조</td>
-      <td>변종헌</td>
-      <td>0</td>
-      <td>2</td>
-      <td>62141</td>
-      <td>3.00</td>
-      <td>4.0</td>
-      <td>31</td>
+      <td>25</td>
       <td>30</td>
-      <td>수2</td>
-      <td>수3</td>
+      <td>목3</td>
+      <td>목4</td>
       <td>NaN</td>
       <td>NaN</td>
     </tr>
@@ -2916,22 +2996,6 @@
     </tr>
     <tr>
       <td>F</td>
-      <td>일본문화의이해</td>
-      <td>소명선,오상은</td>
-      <td>0</td>
-      <td>2</td>
-      <td>25101</td>
-      <td>4.08</td>
-      <td>12.0</td>
-      <td>69</td>
-      <td>60</td>
-      <td>목3</td>
-      <td>목4</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>F</td>
       <td>자바언어로시작하는코딩</td>
       <td>이정훈</td>
       <td>2</td>
@@ -2948,81 +3012,17 @@
     </tr>
     <tr>
       <td>F</td>
-      <td>생활속의발명</td>
-      <td>라상원</td>
+      <td>현대사조</td>
+      <td>변종헌</td>
       <td>0</td>
       <td>2</td>
-      <td>24401</td>
-      <td>4.30</td>
-      <td>10.0</td>
-      <td>61</td>
-      <td>60</td>
-      <td>화6</td>
-      <td>화7</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>F</td>
-      <td>정보통신과컴퓨터개론</td>
-      <td>김진숙</td>
-      <td>0</td>
-      <td>2</td>
-      <td>24296</td>
-      <td>3.36</td>
-      <td>11.0</td>
-      <td>39</td>
-      <td>40</td>
-      <td>목6</td>
-      <td>목7</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>F</td>
-      <td>정보통신과컴퓨터개론</td>
-      <td>김진숙</td>
-      <td>0</td>
-      <td>2</td>
-      <td>24291</td>
-      <td>3.36</td>
-      <td>11.0</td>
-      <td>42</td>
-      <td>40</td>
-      <td>월6</td>
-      <td>월7</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>F</td>
-      <td>생명공학과ICT</td>
-      <td>이효연 외 7인</td>
-      <td>0</td>
-      <td>2</td>
-      <td>24141</td>
-      <td>4.50</td>
-      <td>2.0</td>
-      <td>47</td>
-      <td>60</td>
-      <td>목6</td>
-      <td>목7</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>F</td>
-      <td>아동문학의이해</td>
-      <td>이근영</td>
-      <td>0</td>
-      <td>2</td>
-      <td>62132</td>
-      <td>1.00</td>
-      <td>1.0</td>
-      <td>25</td>
+      <td>62141</td>
+      <td>3.00</td>
+      <td>4.0</td>
+      <td>31</td>
       <td>30</td>
-      <td>목3</td>
-      <td>목4</td>
+      <td>수2</td>
+      <td>수3</td>
       <td>NaN</td>
       <td>NaN</td>
     </tr>
