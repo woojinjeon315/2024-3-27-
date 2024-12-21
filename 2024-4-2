@@ -462,3 +462,77 @@ def solution(data):
 
     answer = sum(answer)
     return answer
+import java.util.Scanner;
+public class ex {
+    public static void p1(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+        
+        String str_1 = scanner.nextInt();
+        String str_2 = scanner.nextInt();
+        
+        
+        // String str_1 = "aa";
+        // String str_2 = "b";
+        
+        int str_1_c = 0;
+        int str_2_c = 0;
+        
+        String[] arr_1;
+        String[] arr_2;
+        
+        int match = 0;
+        int arr_n_1 = 0;
+        int arr_n_2 = 0;
+        
+        
+        int answer = 0;
+        
+        int arr_turn_1 = 0;
+        int arr_turn_2 = 0;
+        
+        
+        for (int turn_1 = 0; turn_1 < str_1.lenght; turn_1 ++) {
+            for (int turn_2 = 0; turn_2 < arr_n_1; turn_2 ++) {
+                if (str_1[turn_1] == arr_1[turn_2]) {
+                    match = 1;
+                }
+            }
+            if (match == 0) {
+                arr[arr_turn_1] = str_1[turn_1];
+                arr_n_1 += 1;
+                arr_turn_1 += 1;
+            }
+            else {
+                str_1_c += 1;
+            }
+            match = 0;
+        }
+        
+        for (int turn_1 = 0; turn_1 < str_2.lenght; turn_1 ++) {
+            for (int turn_2 = 0; turn_2 < arr_n_2; turn_2 ++) {
+                if (str_2[turn_1] == arr_2[turn_2]) {
+                    match = 1;
+                }
+            }
+            if (match == 0) {
+                arr[arr_turn_2] = str_1[turn_1];
+                arr_n_2 += 1;
+                arr_turn_2 += 1;
+            }
+            else {
+                str_1_c += 1;
+            }
+            match = 0;
+        }
+        
+        if (str_1_c - str_2_c <= 1) {
+            System.out.println("True");
+        }
+        else {
+
+            System.out.println("False");   
+        }
+    }
+        
+}
