@@ -1,6 +1,0 @@
-kiosk = ['김밥', '라면', '떡볶이', '돈까스', '튀김']
-order = input('메뉴를 선택해주세요.')
-if order in kiosk:
-    print(f'{order} 주문이 완료되었습니다.')
-else:
-    print('주문하신 메뉴는 없는 메뉴입니다.')
