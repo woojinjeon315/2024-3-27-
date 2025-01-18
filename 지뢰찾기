@@ -281,3 +281,164 @@ void main() {
 
 
 }
+
+
+#include <stdio.h>
+
+int arr[100][100];
+
+int x_size = 10;
+int y_size = 10;
+
+int start_select = 0;
+int setting_select = 0;
+
+
+void game_interface() {
+}
+
+int start() {
+	int input = 0;
+	int stop = 0;
+		puts("---------------------");
+		puts("지뢰찾기");
+		puts("1번 : 게임시작");
+		puts("2번 : 설정");
+		puts("3번 : 종료");
+
+		puts("---------------------");
+
+		while (stop != 1) {
+			puts("번호를 입력해 주세요.");
+			scanf_s("d", &input);
+			getchar();
+
+			if (input == 1 || input == 2 || input == 3) {
+				stop = 1;
+			}
+			else {
+				puts("번호를 다시 입력해 주세요.");
+			}
+		}
+		return input;
+}
+
+int setting() {
+
+	int input = 0;
+	int stop = 0;
+	int stop_2 = 0;
+
+	while (stop != 1) {
+		puts("---------------------");
+		puts("1번 : 가로 사이즈 설정");
+		puts("2번 : 세로 사이즈 설정");
+		puts("3번 : 지뢰 개수 설정");
+		puts("4번 : 메인화면");
+		puts("---------------------");
+		//setting_interface();
+		puts("번호를 입력해 주세요.");
+		scanf_s("d", &input);
+		getchar();
+
+		if (input == 1) {
+			stop_2 = 0;
+			puts("크기를 3 ~ 100 사이로 입력해 주세요.");
+			while (stop_2 != 1) {
+				scanf_s("d", &input);
+				if (input >= 3 && input <= 100) {
+					x_size = input;
+					printf("크기가");
+					printf("%d",input);
+					printf("으로 변경되었습니다. \n");
+					stop_2 = 1;
+				}
+				else {
+					puts("크기를 다시 입력해 주세요.");
+				}
+			}
+		}
+		else if (input == 2) {
+			stop_2 = 0;
+			puts("크기를 3 ~ 100 사이로 입력해 주세요.");
+			while (stop_2 != 1) {
+				scanf_s("d", &input);
+				if (input >= 3 && input <= 100) {
+					x_size = input;
+					printf("크기가");
+					printf("%d", input);
+					printf("으로 변경되었습니다. \n");
+					stop_2 = 1;
+				}
+				else {
+					puts("크기를 다시 입력해 주세요.");
+				}
+			}
+		}
+		else if (input == 3) {
+			stop_2 = 0;
+			puts("지뢰의 수를 3 ~ 100 사이로 입력해 주세요.");
+			while (stop_2 != 1) {
+				scanf_s("d", &input);
+				if (input >= 3 && input <= 100) {
+					x_size = input;
+					printf("지뢰의 수가 ");
+					printf("%d", input);
+					printf(" 변경되었습니다. \n");
+					stop_2 = 1;
+				}
+				else {
+					puts("개수를 다시 입력해 주세요.");
+				}
+			}
+		}
+		else if (input == 4) {
+			stop = 1;
+		}
+		else {
+			puts("번호를 다시 입력해 주세요.");
+		}
+	}
+	return input;
+}
+
+void game_play() {
+
+}
+
+
+
+void main() {
+	//game_interface();
+	int stop = 0;
+	while (stop != 1) {
+		start_select = start();
+		if (start_select == 1) {
+			//game_play();
+			stop = 1;
+		}
+		else if (start_select == 1) {
+			//setting_select = setting();
+			if (setting_select == 1) {
+
+			}
+			else if (setting_select == 2) {
+
+			}
+			else if (setting_select == 3) {
+
+			}
+			else if (setting_select == 4) {
+
+			}
+
+
+		}
+		else if (start_select == 3) {
+			puts("프로그램을 종료 합니다.");
+			return ;
+		}
+	}
+
+
+}
