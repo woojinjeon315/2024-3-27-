@@ -593,3 +593,19 @@ void main() {
 
 
 }
+
+
+int random() {
+	// 랜덤 엔진 생성
+	std::random_device rd;  // 시드 값 생성
+	std::mt19937 gen(rd()); // Mersenne Twister 엔진
+	std::uniform_int_distribution<> dist(1, game_size); // 1부터 100까지 균등 분포
+
+	// 랜덤 숫자 생성 및 출력
+	for (int turn = 0; turn < mine_count; ++turn) {
+		int randomNumber = dist(gen);
+		printf("랜덤 숫자: %d\n", randomNumber);
+	}
+
+	return 0;
+}
