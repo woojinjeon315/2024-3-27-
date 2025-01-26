@@ -837,3 +837,238 @@ void main() {
 
 
 }
+
+#include <stdio.h>
+//#include <random>
+
+//int arr[100][100];
+
+int x_size = 10;
+int y_size = 10;
+
+int mine_count = 20;
+
+int start_select = 0;
+int setting_select = 0;
+
+//int game_size = 0;
+//int game_size = x_size * y_size;
+
+
+int start() {
+
+	int input;
+	int stop = 0;
+	puts("----------------------------------------");
+	puts("지뢰찾기");
+	puts("1번 : 게임시작");
+	puts("2번 : 설정");
+	puts("3번 : 종료");
+	puts("---------------------------------------- \n");
+
+	while (stop == 0) {
+		puts("번호를 입력해 주세요.");
+		scanf_s("%d", &input);
+		getchar();
+		puts("\n");
+
+		if (input == 1 || input == 2 || input == 3) {
+			stop = 1;
+		}
+		else {
+			puts("번호를 다시 입력해 주세요. \n");
+		}
+	}
+	return input;
+}
+
+int setting() {
+
+	int input = 0;
+	int stop = 0;
+	int stop_2 = 0;
+
+	while (stop != 1) {
+		puts("----------------------------------------");
+		puts("1번 : 가로 사이즈 설정");
+		puts("2번 : 세로 사이즈 설정");
+		puts("3번 : 지뢰 개수 설정");
+		puts("4번 : 메인화면");
+		puts("# 기본설정 가로 10, 세로 10, 지뢰수 20 #");
+		puts("---------------------------------------- \n");
+
+		puts("번호를 입력해 주세요.");
+		scanf_s("%d", &input);
+		getchar();
+		puts("\n");
+
+		if (input == 1) {
+			stop_2 = 0;
+			puts("크기를 3 ~ 100 사이로 입력해 주세요.");
+			while (stop_2 != 1) {
+				scanf_s("%d", &input);
+				if (input >= 3 && input <= 100) {
+					x_size = input;
+					printf("크기가");
+					printf("%d", input);
+					printf("으로 변경되었습니다. \n");
+					stop_2 = 1;
+				}
+				else {
+					puts("크기를 다시 입력해 주세요. \n");
+				}
+			}
+		}
+		else if (input == 2) {
+			stop_2 = 0;
+			puts("크기를 3 ~ 100 사이로 입력해 주세요.");
+			while (stop_2 != 1) {
+				scanf_s("%d", &input);
+				if (input >= 3 && input <= 100) {
+					x_size = input;
+					printf("크기가");
+					printf("%d", input);
+					printf("으로 변경되었습니다. \n");
+					stop_2 = 1;
+				}
+				else {
+					puts("크기를 다시 입력해 주세요. \n");
+				}
+			}
+		}
+		else if (input == 3) {
+			stop_2 = 0;
+			puts("지뢰의 수를 3 ~ 100 사이로 입력해 주세요.");
+			while (stop_2 != 1) {
+				scanf_s("%d", &input);
+				if (input >= 3 && input <= 100) {
+					x_size = input;
+					printf("지뢰의 수가 ");
+					printf("%d", input);
+					printf("으로 변경되었습니다. \n");
+					stop_2 = 1;
+				}
+				else {
+					puts("개수를 다시 입력해 주세요. \n");
+				}
+			}
+		}
+		else if (input == 4) {
+			stop = 1;
+		}
+		else {
+			puts("번호를 다시 입력해 주세요. \n");
+		}
+	}
+	return input;
+}
+
+//#include <random>
+//int random() {
+//	// 랜덤 엔진 생성
+//	std::random_device rd;  // 시드 값 생성
+//	std::mt19937 gen(rd()); // Mersenne Twister 엔진
+//	std::uniform_int_distribution<> dist(1, game_size); // 1부터 100까지 균등 분포
+//
+//	// 랜덤 숫자 생성 및 출력
+//	for (int turn = 0; turn < mine_count; ++turn) {
+//		int randomNumber = dist(gen);
+//		printf("랜덤 숫자: %d\n", randomNumber);
+//	}
+//
+//	return 0;
+//}
+
+//void set_mine() {
+//	for (int turn_x = 0; turn < game_size )
+//}
+
+
+void game_play() { // 0 마인 없음, 1 ~ 8 근처 마인수, 9 마인
+	int** array = (int**)malloc(x_size * sizeof(int*));
+	int game_size = x_size * y_size;
+	int array_turn = 0;
+	int mine_turn = 0;
+	int repetition = 0;
+	int mine_count = 0;
+
+	// 각 행에 열 동적 할당
+	for (int turn = 0; turn < y_size; turn++) {
+		array[turn] = (int*)malloc(y_size * sizeof(int));
+	}
+
+	// 배열 사용
+	//array[1][2] = 10;  // 예시로 값 할당
+	//printf("array[1][2] = %d\n", array[1][2]);
+
+	// 메모리 해제
+	for (int i = 0; i < y_size; i++) {
+		free(array[i]);
+	}
+	free(array); 
+
+	while (repetition < 2) {
+		for (int x_turn = 0; x_turn < x_size; x_turn++) {
+			for (int y_turn = 0; y_turn < y_size; y_turn) {
+				if (mine_list[mine_turn] == array_turn && repetition == 0) {
+					array[y_turn][x_turn] = 9;
+					mine_turn += 1;
+				}
+				if (array[y_turn][x_turn] != 9 && repetition == 1) {
+					if (array[y_turn + 1][x_turn] == 9) {
+						mine_count += 1;
+					}
+					if (array[y_turn][x_turn + 1] == 9) {
+						mine_count += 1;
+					}
+					if (array[y_turn - 1][x_turn] == 9) {
+						mine_count += 1;
+					}
+					if (array[y_turn][x_turn - 1] == 9) {
+						mine_count += 1;
+					}
+					if (array[y_turn + 1][x_turn + 1] == 9) {
+						mine_count += 1;
+					}
+					if (array[y_turn - 1][x_turn - 1] == 9) {
+						mine_count += 1;
+					}
+					if (array[y_turn + 1][x_turn - 1] == 9) {
+						mine_count += 1;
+					}
+					if (array[y_turn - 1][x_turn + 1] == 9) {
+						mine_count += 1;
+					}
+					array[y_turn][x_turn] = mine_count;
+				}
+				mine_count = 0;
+				array_turn += 1;
+			}
+		}
+		repetition += 1;
+		mine_turn = 0;
+	}
+
+	// 게임세팅
+
+}
+
+
+
+void main() {
+	int stop = 0;
+	while (stop == 0) {
+		start_select = start();
+		if (start_select == 1) {
+			//game_play();
+			stop = 1;
+		}
+		else if (start_select == 2) {
+			setting();
+		}
+		else if (start_select == 3) {
+			puts("프로그램을 종료 합니다.");
+			return;
+		}
+	}
+}
