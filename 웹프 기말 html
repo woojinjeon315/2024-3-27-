@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>JNU Tier List</title>
+  <link rel="stylesheet" href="css/HTLM_CSS.css">
+</head>
+<body>
+  <header>
+    <a href="JNU Tier List.html" class="button"><h1>JNU Tier List</h1></a>
+    <nav>
+      <ul id ="topMenu">
+        <li><a href="랭킹분석.html" class="button">강의 랭킹</a></li>
+        <li><a href="검색.html" class="button">검색</a></li>
+        <li><a href="로그인.html" class="button">로그인</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="emblem"> 
+    <img src="images/제주대엠블럼.png" alt="제주대학교 엠블럼입니다.">
+</div>
+  <main class="search">
+    <formaction="">
+      <fieldset>
+          <legend>검색</legend>
+          <input type="search" id="list_search" placeholder="검색어를 입력해주세요.">
+          <a href="검색.html" class="button">검색</a>
+        </div>
+      </fieldset>
+    </form>
+  </main>
+    <main class="container">
+      <section id="#">
+        <div class="text">  
+          <h1>JNU Tier List 입니다.</h1>
+            <ul>
+              <li>
+                <label for="container_t_1">본 사이트는 제주대학교 핵심역량 교양 티어리스트입니다.</label> 
+              <li>
+                <label for="container_t_2">본 사이트는 강의의 여러 정보를 확인할 수 있습니다.</label>
+              <li>
+                <label for="container_t_3">본 사이트는 강의를 A,B,C,D,F 5단계로 분류합니다.</label>
+              </li>
+              </ul>
+          </div>
+      </section>
+  </main>
+
+  <footer>
+    <ul>
+      <li><a href="공지사항.html"  class="button">공지사항</a></li>
+      <li><a href="이용안내.html"  class="button">이용안내</a></li>
+      <li><a href="연락처.html"  class="button">연락처</a></li>
+    </ul>
+  </footer>
+</body>
+</html>
