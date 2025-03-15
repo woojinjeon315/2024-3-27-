@@ -1,3 +1,7 @@
+for a in range(9):
+	for i in range(9):
+		print((a + 1) * (i + i)) 
+
 import torch
 
 print(torch.tenser([1,2],[3,4]))
