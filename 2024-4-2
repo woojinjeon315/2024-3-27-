@@ -1,3 +1,22 @@
+    for (int y = 0; y < max_y; y ++) {
+        for (int x = 0; x < max_x; x ++) {
+            if (arr[y][x] == 1) {
+                if (y < max_y && 1 != arr[y + 1][x]) {
+                    arr[y + 1][x] = 2;
+                }
+                if (y > 0 && 1 != arr[y - 1][x]) {
+                    arr[y - 1][x] = 2;
+                }
+                if (x < max_x && 1 != arr[y][x + 1]) {
+                    arr[y][x + 1] = 2;
+                }
+                if (x > 0 && 1 != arr[y][x - 1]) {
+                    arr[y][x - 1] = 2;
+                }
+            }
+        }
+    }
+
 for a in range(9):
 	for i in range(9):
 		print((a + 1) * (i + i)) 
