@@ -1,4 +1,34 @@
-    for (int y = 0; y < max_y; y ++) {
+ks = [49,80,20,100,80]
+ms = [43,60,85,30,90]
+es = [49,82,48,50,100]
+m_s = [ks,ms,es]
+ss = [0,0,0,0,0]
+
+for j in range(3):
+    for i in range(5):
+        ss[i] += (m_s[j][i]) / 3
+
+print(ss)
+
+import random
+
+n = random.randint(1,100)
+n_t = False
+i = int(input("숫자입력 1 ~ 100"))
+
+while (n_t == False):
+    if (i == n):
+        n_t = True
+        print("정답입니다")
+    else:
+        if (i > n) :
+            print("입력된 숫자가 정답보다 큽니다")
+        elif (i < n) :
+            print("입력된 숫자가 정답보다 작습니다")
+            i = int(input("숫자입력 1 ~ 100"))
+
+
+for (int y = 0; y < max_y; y ++) {
         for (int x = 0; x < max_x; x ++) {
             if (arr[y][x] == 1) {
                 if (y < max_y && 1 != arr[y + 1][x]) {
