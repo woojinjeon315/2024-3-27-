@@ -1,0 +1,11 @@
+l = [[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]]
+
+for i in range(2, 10):
+    for j in range(1, 10):
+        if (i < 6) :
+            l[j - 1].append(str(f'{i} X {j} = {i*j}'))
+        else :
+            l[j + 8].append(str(f'{i} X {j} = {i*j}'))
+
+for y in range(0,20)
+    print(l[y])
