@@ -1,3 +1,71 @@
+def add(a, b):
+    return a + b
+
+def subtract(a, b):
+    return a - b
+
+
+from google.colab import drive
+drive.mount('/content/drive')
+
+
+class s:
+    def __init__(self, name, price):
+        self.name = name
+        self.price = price
+
+    def c(self, num = 1):
+        self.count
+
+sma = s("삼성전자",5000)
+sk = s("sk",10000)
+kt = s("kt",50000)
+
+
+
+a = [1,4,37,66,4,82,32,53,6,26,546]
+sorted_a = sorted(a)
+a
+
+f = ["사과","포도","귤","딸기"]
+d = enumerate(f)
+print(d)
+for i j in d:
+    print([],my_stocks d[i])
+
+from collections import defaultdict
+f = ["사과","포도","귤","딸기"]
+
+def ast(*args):
+    x,y,*z=args
+    return x, y, z
+print(ast(3,4,5))
+
+def f(n):
+    # a = 1
+    # for i in range(1,n):
+    #     a = a * i
+    # a = a * n
+    # return a
+    if (n == 1):
+        return n
+    else :
+        n -= 1
+        return n
+print(f(int(input("number :"))))
+
+c = { i for i in range(0,10) if (i % 2 == 0)}
+c
+
+c = [ i for i in range(0,10) if (i % 2 == 0)]
+c
+
+c = [i*i for i in range(0,10)]
+c
+
+c = [i for i in range(0,10)]
+c
+
 l = [[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]]
 
 for i in range(2, 10):
