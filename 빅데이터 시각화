@@ -1,3 +1,84 @@
+df4 = df2.reset_index(drop=True)
+df5 = df4.set_index(dates)
+df5
+
+datas = pd.date_range['20200401',periods=6]
+datas
+
+df3 = df.reset_index(drop = True)
+df3
+
+df.set_index("number",append = False)
+
+index = ['zero','one','two','three','four','five']
+df
+
+df['xy.value'] = df["x.value"] * df["y.value"]
+df
+
+x = [0,1,2,3,4,5]
+y = [0,2,4,6,8,10]
+df = pd.DataFrame(x,y)
+
+score_df.drop(['성명'], axis=1)
+score_df
+
+score_df.drop(['성명'], axis=1)
+score_df
+
+score_df.index
+
+B = A.astype({'col_str1' : int, 'col_str2' : float})
+B
+
+A = pd.DataFrame({'col_str1' : [1,2,3,4],'col_str2' : [5,6,7,8]})
+print(A)
+A.dtypes
+
+score_df.shape
+
+score = {'성명' : ["A","B","C"], '국어': [30,40,10], '수학' : [40,60,40], '영어' : [30,60,70]}
+pd.DataFrame(score)
+score = [["정약용",40,30,50],["이순신",50,70,80],["이황",40,40,50]]
+score_df = pd.DataFrame(score)
+
+# score_df.rename(colums[])
+score_df.values
+
+score = [["정약용",40,30,50],["이순신",50,70,80],["이황",40,40,50]]
+score_df = pd.DataFrame(score)
+score_df.columns = ["성명",'국어','영어','수학']
+score_df.rename(colums{'국어' : "korean"})
+score_df
+
+score = [["정약용",40,30,50],["이순신",50,70,80],["이황",40,40,50]]
+score_df = pd.DataFrame(score)
+
+score_df.columns = ["성명",'국어','영어','수학']
+score_df
+
+score = [["정약용",40,30,50],["이순신",50,70,80],["이황",40,40,50]]
+score_df = pd.DataFrame(score)
+print(type(score))
+score_df
+B = A
+
+a = [1,2,3,4,5]
+A = pd.DataFrame(a)
+a["1열"]
+
+a = [1,2,3,4,5,6,7,8]
+A = pd.Series(a)
+print(A)
+type(A)
+A
+
+pd.DataFrame([[1,2,3],[4,5,6]])
+
+import pandas as pd
+pd.Series([1,2,3,4,5,6])
+
+
 def add(a, b):
     return a + b
 
