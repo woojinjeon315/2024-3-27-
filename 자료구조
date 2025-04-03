@@ -1,3 +1,36 @@
+class Sp(obj):
+    def __init__(self, name, position, back_number):
+        self.name = name
+        self.position = position
+        self.back_number = back_number
+    def cbn(self, new_number):
+        print
+
+f = lambda x, y: x + y
+print(f(2,6))
+
+def f(x,y):
+    return x + y
+
+print(f(1,4))
+
+for i, v in enumerate(['tic','tac','toe']):
+    print(i,v)
+
+re = [[i + j for i in c1]for j in c2]
+re
+
+wr = 'The quick brown fox jumps over the lazy dog'.split()
+print(wr)
+s = [[w.upper(),w.lower(),len(w)]for w in wr]
+print(s)
+
+c1 = ["a","b",'c']
+c2 = ['d','e','a']
+
+re = [i + j for i in c1 for j in c2 if not(i==j)]
+re
+
 country_code = {}
 country_code = {"America":1,"korea":82,"china":86,"Japan":81}
 country_code
