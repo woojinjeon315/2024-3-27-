@@ -94,6 +94,57 @@ def multiply(x, y):
     print("a")
     return (x * y) * (1/10 ** square))
 
+
+(def multiply(x, y):
+    # return x * y
+    x_square = 0
+    y_square = 0
+    
+    
+    while not(int(x) == x):
+        x = x * 10
+        x_square += 1
+        # print("xwX")
+
+    x = int(x)
+
+    while not(int(y) == y):
+        y = y * 10        
+        y_square += 1
+        # print("ywX")
+        
+    y = int(y)
+
+    # print(x,y)
+        
+    square = x_square + y_square
+    print("a")
+    return (x * y) * (1/10 ** square)
+
+def devide(x, y):
+    # return x / y
+    x_square = 0
+    y_square = 0
+    
+
+    while not(int(x) == x):
+        x = x * 10
+        x_square += 1
+        # print("xw/")
+    x = int(x)
+
+    while not(int(y) == y):
+        y = y * 10        
+        y_square += 1
+        # print("yw/")
+
+    y = int(y)
+
+    # print(x,y)
+        
+    square = x_square + y_square
+    # print("")
+    return (x / y) * (1/10 ** square))
 def devide(x, y):
     return x / y
 
