@@ -155,4 +155,127 @@ def variance
 
 
 
+##############################
+
+
+
+def add(x, y):
+    
+    x_square = 0
+    y_square = 0
+
+    x_tmep = x
+    y_temp = y
+    
+    if not(int(x) == x and int(y) == y):
+        while not(int(x) == x):
+            x = x * 10
+            x_square += 1
+
+        while not(int(y) == y):
+            y = y * 10        
+            y_square += 1
+
+        x = x_tmep
+        y = y_temp
+
+        if (x_square > y_square):
+            square = x_square
+            
+        else :
+            square = y_square
+
+        x = int(x * (10 ** square))
+        y = int(y * (10 ** square))
+
+        return (x + y) / (10 ** square)
+
+    else :
+        return x + y
+    
+def subtract(x, y):
+    
+    x_square = 0
+    y_square = 0
+
+    x_tmep = x
+    y_temp = y
+    
+    if not(int(x) == x and int(y) == y):
+        while not(int(x) == x):
+            x = x * 10
+            x_square += 1
+
+        while not(int(y) == y):
+            y = y * 10        
+            y_square += 1
+
+        x = x_tmep
+        y = y_temp
+
+        if (x_square > y_square):
+            square = x_square
+            
+        else :
+            square = y_square
+
+        x = int(x * (10 ** square))
+        y = int(y * (10 ** square))
+
+        return (x - y) / (10 ** square)
+
+    else :
+        return x - y
+
+
+
+
+
+def multiply(x, y):
+    x_square = 0
+    y_square = 0
+    
+    
+    while not(int(x) == x):
+        x = x * 10
+        x_square += 1
+
+    while not(int(y) == y):
+        y = y * 10        
+        y_square += 1
+        
+    x = int(x)
+    y = int(y)
+    square = x_square + y_square
+    
+    return (x * y) * (1/10 ** square)
+
+def devide(x, y):
+    x_square = 0
+    y_square = 0
+    
+
+    while not(int(x) == x):
+        x = x * 10
+        x_square += 1
+
+    while not(int(y) == y):
+        y = y * 10        
+        y_square += 1
+
+    x = int(x)
+    y = int(y)
+    square = x_square + y_square
+
+    return (x / y) * (1/10 ** square)
+
+
+
+def mean(x, y):
+    return (x + y) / 2
+
+def variance(x, y):
+    m = (x + y) / 2
+    return ((x - m)**2 + (y - m)**2) / 2
+
 
