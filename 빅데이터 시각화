@@ -1,3 +1,20 @@
+titanic_df.tail(2)
+
+titanic_df.head(4)
+
+titanic = 'https://github.com/sehakflower/data/blob/main/titanic.xlsx?raw=true'
+
+titanic = pd.read_excel(titanic,sheet_name='titanic3')
+titanic
+
+link = 'https://raw.githubusercontent.com/sehakflower/data/main/titanic.csv'
+titanic_df = pd.read_csv(link, sep ="\t")
+titanic_df
+
+import pandas as pd
+titanic_df = pd.read_csv('https://raw.githubusercontent.com/sehakflower/data/main/titanic.csv')
+titanic_df
+
 text = ',,,작은 일에 성실한 사람은 큰 일에도 성실하고,,,'
 
 print(text.lstrip(','))
