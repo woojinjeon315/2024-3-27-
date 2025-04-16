@@ -1,0 +1,13 @@
+pip install pillow pytesseract
+
+from PIL import Image
+import pytesseract
+
+
+image = Image.open("/content/aaaaa.png")
+
+
+text = pytesseract.image_to_string(image, lang='eng')  
+
+print("추출된 텍스트:")
+print(text)
