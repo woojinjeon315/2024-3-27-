@@ -138,3 +138,40 @@ def s():
     return c
 # print(lyric)
 print(s())
+
+class Set:
+    def __init__(self):
+        self.items = []
+    def size(self):
+        return len(self.items)
+    def display(self, msg):
+        print(msg, self.items)
+    def contains(self, item):
+        return item in self.items
+    def insert(e):
+        if e not in self.items:
+            self.items.append(e)
+    def delete(e):
+        if e in self.items:
+            self.items.remove(e)
+    # def equals(setB):
+
+    def union(self, setB):
+        setC = Set()
+        setC.items = list(self.items)
+        for e in setB.items:
+            if e not in self.items:
+                setC.items.append(e)
+        return setC
+    def difference(self, setB):
+        setC = Set()
+        for e in self.items:
+            if e not in setB.items:
+                setC.items.append(e)
+        return setC
+    def intersect(self, setB):
+        setC = Set()
+        for e in self.items:
+            if e in setB.items:
+                setC.items.append(e)
+        return setC
