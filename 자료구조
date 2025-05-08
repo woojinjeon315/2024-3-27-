@@ -198,3 +198,25 @@ def stackc(data):
         return False
 
 stackc('({{})')
+
+
+def stackc(data):
+    s = []
+    re = None
+
+    for i in data:
+        if (i == '(' or i == '[' or i == '{'):
+            s.append(i)
+        elif ((i == ']') and (s[-1] == '[') or ((i == '}') and (s[-1] == '{')) or ((i == ')') and (s[-1] == '('))):
+            s.pop()
+
+    if (s == []):
+        re = True
+    else:
+        re = False
+        
+    return re
+
+print(stackc('({{})'))
+print(stackc('(][)'))
+print(stackc('({[]})'))
