@@ -1,10 +1,13 @@
-
+하이퍼링크??
 
 from IPython.display import Markdown
 
 food = '바나나'
 Markdown(f"[{food}레시피](https://www.youtube.com/results?search_query={food}recipe)")
 
+######################################
+
+이미지 텍스트 추출
 
 import re
 from PIL import Image
@@ -25,6 +28,38 @@ def extract_date(data):
 
     pat = r'\d{2,4}\.\d{2}\.\d{2}'
     date_list = re.findall(pat, data)
+
+    return date_list
+
+print('날짜추출')
+for j in text_list:
+    date_list.extend(extract_date(j))
+print(date_list)
+
+??????
+
+이미지 텍스트 추출2
+
+import re
+from PIL import Image
+import pytesseract
+
+date_list = []
+text_list = []
+# f_list = ["/한우 유통기한.jpg"]
+f_list = ["/날짜 모음.png",'/날짜 텍스트 모음.png']
+
+for i in f_list:
+    image = Image.open(i)
+    text = pytesseract.image_to_string(image, lang='eng+kor')
+    text_list.append(text)
+    print("추출된 텍스트:")
+    print(text)
+
+def extract_date(data): #정규표현식
+
+    pat = r'\d{2,4}.\d{2}.\d{2}'
+    date_list = (re.findall(pat, data)) #sorted 추가하기 
 
     return date_list
 
