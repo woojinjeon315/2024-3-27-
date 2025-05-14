@@ -27,6 +27,7 @@ for i in f_list:
 def extract_date(data):
 
     pat = r'\d{2,4}\.\d{2}\.\d{2}'
+
     date_list = re.findall(pat, data)
 
     return date_list
@@ -67,3 +68,18 @@ print('날짜추출')
 for j in text_list:
     date_list.extend(extract_date(j))
 print(date_list)
+
+
+@@@@@@@@
+
+
+!ls /usr/share/tesseract-ocr/4.00/tessdata
+
+
+!apt install tesseract-ocr -y
+
+# 2. 한글 언어팩 설치
+!apt install tesseract-ocr-kor -y
+
+# 3. pytesseract & Pillow 설치
+!pip install pytesseract pillow
