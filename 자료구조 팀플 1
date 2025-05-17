@@ -79,19 +79,21 @@ import pytesseract
 date_list = []
 text_list = []
 
-def extract_date(data): #정규표현식
+def extract_number(data): #정규표현식
 
     pat = r'\d{2,4}\W\d{2}\W\d{2}' #숫자사이 기호만
     # pat = r'\d{2,4}.\d{2}.\d{2}' #숫자사이 전부
 
     temp = (re.findall(pat, data)) #sorted 추가하기
-
+    # print(date_list)
     for tempf in temp:
         if (len(tempf) == 10):
             date_list.append(tempf[2:])
-            # print(tempf)
+            print(date_list)
         else :
             date_list.append(tempf)
+            print(date_list)
+
 
     # dete_list = 
     # print('111')
@@ -112,9 +114,9 @@ for i in f_list:
 
 print('날짜추출')
 for j in text_list:
-    date_list.extend(extract_date(j))
+    (extract_number(j))
 print(date_list)
-
+print(text_list)
 
 @@@@@@@@@@@@@@@@
 
