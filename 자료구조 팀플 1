@@ -120,6 +120,50 @@ print(text_list)
 
 @@@@@@@@@@@@@@@@
 
+import re
+from PIL import Image
+import pytesseract
+
+def use_by_date(f_list):
+
+    date_list = []
+    text_list = []
+    tempB = []
+
+    def extract_date(data): #정규표현식
+
+        pat = r'\d{2,4}\W\d{2}\W\d{2}' #숫자사이 기호만
+        # pat = r'\d{2,4}.\d{2}.\d{2}' #숫자사이 전부
+
+        temp_A = (re.findall(pat, data)) #sorted 추가하기
+        for tempf in temp_A:
+            if (len(tempf) == 10):
+                tempB.append(tempf[2:])
+            else :
+                tempB.append(tempf)
+
+        date_list = sorted(tempB)
+
+        return date_list
+
+    for i in f_list:
+        image = Image.open(i)
+        text = pytesseract.image_to_string(image, lang='eng+kor')
+        text_list.append(text)
+
+    for j in text_list:
+        date_list.extend(extract_date(j))
+
+    return date_list
+
+f_place = ["/content/잡3.jpg"]
+# f_place = ["/날짜 모음.png",'/날짜 텍스트 모음.png']
+# f_place = ["/content/텍스트 이미지.PNG","/content/잡3.jpg"]
+
+print(use_by_date(f_place))
+
+$$$$$$$$$$$$
+
 
 !ls /usr/share/tesseract-ocr/4.00/tessdata
 
