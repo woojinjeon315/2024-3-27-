@@ -1,0 +1,56 @@
+!ls /usr/share/tesseract-ocr/4.00/tessdata
+
+!apt install tesseract-ocr -y
+
+# 한글 언어팩 설치
+!apt install tesseract-ocr-kor -y
+
+# pytesseract & Pillow 설치
+!pip install pytesseract pillow
+
+
+___________________________________________________________________________________________________________________________________________________________________________________
+
+#유통기한 추출 함수버전
+# https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20141018_206%2Flovek173_1413593325608lW7In_JPEG%2FScreenshot_2014-10-18-09-37-32.png&type=sc960_832
+# 유통기한 예시
+
+import re
+from PIL import Image
+import pytesseract
+
+def use_by_date(f_list):
+
+    date_list = []
+    text_list = []
+    tempB = []
+
+    def extract_date(data): #정규표현식
+
+        pat = r'\d{2,4}\W\d{2}\W\d{2}' #숫자사이 기호만
+        # pat = r'\d{2,4}.\d{2}.\d{2}' #숫자사이 전부
+
+        temp_A = (re.findall(pat, data))
+        for tempf in temp_A:
+            if (len(tempf) == 10):
+                tempB.append(tempf[2:])
+            else :
+                tempB.append(tempf)
+
+        date_list = sorted(tempB)
+
+        return date_list
+
+    for i in f_list:
+        image = Image.open(i)
+        text = pytesseract.image_to_string(image, lang='eng+kor')
+        text_list.append(text)
+
+    for j in text_list:
+        date_list.extend(extract_date(j))
+
+    return date_list
+
+f_place = [] #이미지 주소
+
+print(use_by_date(f_place))
