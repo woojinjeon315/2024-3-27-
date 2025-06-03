@@ -29,7 +29,7 @@ def use_by_date(f_list):
 
         pat = r'\d{2,4}\W\d{2}\W\d{2}' #숫자사이 기호만
         # pat = r'\d{2,4}.\d{2}.\d{2}' #숫자사이 전부
-        pat = r'\d{2,4}\d{2}\d{2}' #숫자만
+        # pat = r'\d{2,4}\d{2}\d{2}' #숫자만
 
         temp_A = (re.findall(pat, data))
         for tempf in temp_A:
