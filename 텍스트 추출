@@ -1,0 +1,41 @@
+pip install easyocr
+
+
+import easyocr
+
+
+reader = easyocr.Reader(['ko', 'en'])
+
+
+image_path = '/content/꼬북칩 영양정보.jpg'
+
+
+result = reader.readtext(image_path)
+
+
+for bbox, text, confidence in result:
+    print(f"텍스트: {text} (신뢰도: {confidence:.2f})")
+
+################################################################
+
+import easyocr
+
+
+def extract_date(data):
+    reader = easyocr.Reader(['ko', 'en'])
+
+
+    # image_path = data
+
+
+    result = reader.readtext(data)
+    return result
+
+f = '/content/화면 캡처.png'
+extract_date(f)
+print(result)
+for bbox, text, confidence in result:
+    print(f"텍스트: {text} (신뢰도: {confidence:.2f})")
+    
+for bbox, text, confidence in result:
+    print(text)
