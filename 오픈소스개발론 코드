@@ -1,0 +1,95 @@
+html
+
+    <div class="saved-time-container">
+      <div class="saved-time-header">
+        <div class="saved-time-title">저장된 시간</div>
+        <ul id="saved-time-list" class="saved-time-list"></ul>
+      </div>
+      <div class="saved-time-buttons">
+        <button class="save-button" id="save-time-button">시간 저장</button>
+        <button class="save-button" id="clear-time-button">초기화</button>
+      </div>
+    </div>
+
+________________________________________________________________________________
+
+css 
+
+    .saved-time-container {
+    width: 550px;
+    min-height: 80px;
+    background-color: #ffffff;
+    border-radius: 9px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    padding: 16px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .saved-time-header {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-grow: 1;
+  }
+
+  .saved-time-title {
+    font-size: 25px;
+    font-weight: bold;
+    color: #000000;
+  }
+
+  .saved-time-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    max-height: 100px;
+    overflow-y: auto;
+    font-size: 15px;
+    font-weight: 500;
+    color: #222;
+  }
+
+  .saved-time-list li {
+    background-color: #f0f8ff;
+    padding: 6px 10px;
+    border-radius: 6px;
+    margin-bottom: 5px;
+  }
+
+  .saved-time-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .save-button {
+    width: 100px;
+    height: 37px;
+    border-radius: 7px;
+    background-color: #88cfdc;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+  }
+
+___________________________________________________
+
+js
+
+const saveTimeButton = document.getElementById("save-time-button");
+const clearTimeButton = document.getElementById("clear-time-button");
+const savedTimeList = document.getElementById("saved-time-list");
+
+saveTimeButton.addEventListener("click", () => {
+  const time = display.textContent;
+  const li = document.createElement("li");
+  li.textContent = `⏱️ ${time}`;
+  savedTimeList.appendChild(li);
+});
+
+clearTimeButton.addEventListener("click", () => {
+  savedTimeList.innerHTML = "";
+});
