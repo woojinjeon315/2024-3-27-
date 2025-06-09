@@ -1,3 +1,36 @@
+js 마우스 움직임 감지 코드
+js 에 추가하시면 됩니다
+
+
+let lastMouseMoveTime = Date.now();
+let mouseStillTooLong = false;
+
+document.addEventListener('mousemove', () => {
+    const now = Date.now();
+
+    if (isRunning && mouseStillTooLong) {
+        showCustomAlert("💡 마우스를 움직이셨습니다! 다시 집중해보세요.");
+    }
+
+    lastMouseMoveTime = now;
+    mouseStillTooLong = false;
+});
+
+setInterval(() => {
+    if (!isRunning) return;
+
+    const now = Date.now();
+    if (now - lastMouseMoveTime > 1000) {
+        mouseStillTooLong = true;
+    }
+}, 1000);
+
+
+
+_______________________________________________________________________________
+
+시간저장 코드
+
 html
 
     <div class="saved-time-container">
