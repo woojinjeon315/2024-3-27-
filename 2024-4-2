@@ -1,3 +1,23 @@
+def r(x, y):
+    if (x > y):
+        max = x
+    else:
+        max = y
+    x_r = 0
+    y_r = 0
+    for turn in range(x):
+        x_r += (10 ^ turn) + 1
+    for turn in range(y):
+        y_r += 10 ^ turn + 1
+
+    return x + y
+
+x = 3
+y = 2
+
+r(3, 2)
+
+
 l1 = [1, 2, 3]
 a = l1.copy()
 b = l1.deepcopy()
