@@ -1,0 +1,17 @@
+n_list = []
+max_n = 100
+for i in range(2,max_n):
+    n_list.append(i)
+base_n_list = n_list
+print(n_list)
+
+#################################
+
+re_list = []
+for i in range(2, max_n):
+    turn = 0
+    while (len(n_list) > turn):
+        if (n_list[turn] / i != 0):
+            n_list.remove(n_list[turn])
+        turn += 1
+print(n_list)
