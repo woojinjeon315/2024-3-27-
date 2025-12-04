@@ -1,0 +1,20 @@
+package hw3;
+import java.util.Scanner;
+
+public class StringRotate {
+	public static void main(String args[]) {
+		Scanner scanner = new Scanner(System.in);
+		String txt = scanner.nextLine();
+		char[] txt_arr = txt.toCharArray();
+		char[] temp_arr = new char[txt_arr.length];
+		
+		for (int turn_2 = 0; txt_arr.length > turn_2; turn_2 ++) {
+			for (int turn = 0; txt_arr.length > turn ; turn ++) {
+				int s_t = (turn + turn_2) % txt_arr.length;
+				temp_arr[turn] = txt_arr[s_t];
+			}
+			System.out.print(temp_arr);
+			System.out.print("\n");
+		}
+	}
+}
